@@ -1,0 +1,384 @@
+@import "tailwindcss";
+
+/* ===== FIFA WC2026 Design System ===== */
+@theme {
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  --color-neon-green: #7CFF4F;
+  --color-neon-green-dim: #5BC438;
+  --color-cyan-glow: #00E5FF;
+  --color-cyan-dim: #00B8D4;
+
+  --color-dark-bg: #0A0E17;
+  --color-dark-navy: #0D1321;
+  --color-dark-card: #111827;
+  --color-dark-surface: #151C2C;
+
+  --color-glass: rgba(255, 255, 255, 0.05);
+  --color-glass-border: rgba(255, 255, 255, 0.1);
+  --color-glass-hover: rgba(255, 255, 255, 0.08);
+
+  --color-live-red: #FF3B30;
+  --color-gold: #FFD700;
+}
+
+/* ===== Base Resets ===== */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0A0E17;
+  color: #f0f0f0;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', sans-serif;
+}
+
+/* ===== Scrollbar Styling ===== */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0E17;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(124, 255, 79, 0.3);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(124, 255, 79, 0.5);
+}
+
+/* ===== Glassmorphism Utilities ===== */
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.glass-strong {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(32px);
+  -webkit-backdrop-filter: blur(32px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* ===== Premium Glow Cards ===== */
+.glow-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glow-card:hover {
+  border-color: rgba(124, 255, 79, 0.15);
+  box-shadow: 0 12px 40px -12px rgba(124, 255, 79, 0.12),
+              inset 0 1px 1px rgba(255, 255, 255, 0.05);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.015) 100%);
+}
+
+.glow-card-cyan:hover {
+  border-color: rgba(0, 229, 255, 0.15);
+  box-shadow: 0 12px 40px -12px rgba(0, 229, 255, 0.12),
+              inset 0 1px 1px rgba(255, 255, 255, 0.05);
+}
+
+/* ===== Text Gradients ===== */
+.text-gradient-neon {
+  background: linear-gradient(135deg, #7CFF4F 0%, #00E5FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-cyan {
+  background: linear-gradient(135deg, #00E5FF 0%, #00B8D4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ===== Ambient Backdrop Lights ===== */
+.ambient-light-green {
+  background: radial-gradient(circle, rgba(124, 255, 79, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.ambient-light-cyan {
+  background: radial-gradient(circle, rgba(0, 229, 255, 0.05) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* ===== Glow Effects ===== */
+.glow-green {
+  box-shadow: 0 0 24px rgba(124, 255, 79, 0.12),
+              0 0 48px rgba(124, 255, 79, 0.04);
+}
+
+.glow-green-strong {
+  box-shadow: 0 0 24px rgba(124, 255, 79, 0.25),
+              0 0 60px rgba(124, 255, 79, 0.08),
+              inset 0 0 20px rgba(124, 255, 79, 0.04);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 24px rgba(0, 229, 255, 0.12),
+              0 0 48px rgba(0, 229, 255, 0.04);
+}
+
+.text-glow-green {
+  text-shadow: 0 0 24px rgba(124, 255, 79, 0.4),
+               0 0 48px rgba(124, 255, 79, 0.2);
+}
+
+.text-glow-cyan {
+  text-shadow: 0 0 24px rgba(0, 229, 255, 0.4),
+               0 0 48px rgba(0, 229, 255, 0.2);
+}
+
+/* ===== Animations ===== */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(124, 255, 79, 0.15);
+  }
+  50% {
+    box-shadow: 0 0 36px rgba(124, 255, 79, 0.35),
+                0 0 60px rgba(124, 255, 79, 0.08);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes live-pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(1.4);
+  }
+}
+
+@keyframes streak {
+  0% {
+    transform: translateX(-100%) translateY(0) rotate(-15deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.5;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(200vw) translateY(-50px) rotate(-15deg);
+    opacity: 0;
+  }
+}
+
+@keyframes border-glow {
+  0%, 100% {
+    border-color: rgba(124, 255, 79, 0.15);
+  }
+  50% {
+    border-color: rgba(124, 255, 79, 0.4);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-live-pulse {
+  animation: live-pulse 1.5s ease-in-out infinite;
+}
+
+.animate-border-glow {
+  animation: border-glow 3s ease-in-out infinite;
+}
+
+/* ===== Light Streaks (Hero) ===== */
+.light-streak {
+  position: absolute;
+  width: 300px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(124, 255, 79, 0.4), transparent);
+  animation: streak 10s linear infinite;
+  pointer-events: none;
+}
+
+.light-streak:nth-child(2) {
+  width: 200px;
+  top: 30%;
+  animation-delay: 3s;
+  animation-duration: 12s;
+  background: linear-gradient(90deg, transparent, rgba(0, 229, 255, 0.3), transparent);
+}
+
+.light-streak:nth-child(3) {
+  width: 250px;
+  top: 60%;
+  animation-delay: 6s;
+  animation-duration: 14s;
+}
+
+.light-streak:nth-child(4) {
+  width: 180px;
+  top: 80%;
+  animation-delay: 2s;
+  animation-duration: 11s;
+  background: linear-gradient(90deg, transparent, rgba(0, 229, 255, 0.25), transparent);
+}
+
+/* ===== Neon Button ===== */
+.btn-neon {
+  background: linear-gradient(135deg, #7CFF4F, #5BC438);
+  color: #0A0E17;
+  font-weight: 700;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 28px;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-neon:hover {
+  box-shadow: 0 0 28px rgba(124, 255, 79, 0.4);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background: transparent;
+  color: #fff;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 12px 28px;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-outline:hover {
+  border-color: rgba(124, 255, 79, 0.4);
+  background: rgba(255, 255, 255, 0.02);
+  transform: translateY(-2px);
+}
+
+/* ===== Filter Pills ===== */
+.filter-pill {
+  padding: 8px 22px;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+  color: #9ca3af;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.filter-pill:hover {
+  border-color: rgba(124, 255, 79, 0.3);
+  color: #fff;
+}
+
+.filter-pill.active {
+  background: linear-gradient(135deg, rgba(124, 255, 79, 0.15), rgba(124, 255, 79, 0.03));
+  border-color: rgba(124, 255, 79, 0.4);
+  color: #7CFF4F;
+  box-shadow: 0 4px 16px rgba(124, 255, 79, 0.08);
+}
+
+/* ===== Gradient Overlays ===== */
+.hero-gradient {
+  background: linear-gradient(
+    180deg,
+    rgba(10, 14, 23, 0.2) 0%,
+    rgba(10, 14, 23, 0.5) 30%,
+    rgba(10, 14, 23, 0.85) 70%,
+    rgba(10, 14, 23, 1) 100%
+  );
+}
+
+/* ===== Scrollbar Hide Utilities ===== */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 768px) {
+  .btn-neon, .btn-outline {
+    padding: 12px 24px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-neon, .btn-outline {
+    padding: 11px 20px;
+    font-size: 0.75rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .filter-pill {
+    padding: 6px 14px;
+    font-size: 0.7rem;
+  }
+}
