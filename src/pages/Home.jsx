@@ -100,7 +100,7 @@ export default function Home({ onLoginClick }) {
       <section className="relative min-h-screen flex items-center justify-center px-4">
         {/* Background */}
         <div className="absolute inset-0">
-          <img src="/stadium-bg.png" alt="" className="w-full h-full object-cover" />
+          <img src={`${import.meta.env.BASE_URL}stadium-bg.png`} alt="" className="w-full h-full object-cover" />
           <div className="hero-gradient absolute inset-0" />
         </div>
 
