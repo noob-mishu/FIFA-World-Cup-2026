@@ -21,7 +21,7 @@ export default function App() {
 
   // Dynamically calculate navbar height using ResizeObserver
   useEffect(() => {
-    if (!flagsLoaded || !navbarRef.current) return;
+    if (!navbarRef.current) return;
 
     const updateHeight = () => {
       if (navbarRef.current) {
@@ -30,6 +30,14 @@ export default function App() {
     };
 
     updateHeight();
+
+    // Fallback for older mobile devices/browsers that do not support ResizeObserver
+    if (typeof ResizeObserver === 'undefined') {
+      window.addEventListener('resize', updateHeight);
+      return () => {
+        window.removeEventListener('resize', updateHeight);
+      };
+    }
 
     const resizeObserver = new ResizeObserver(() => {
       updateHeight();
@@ -59,7 +67,6 @@ export default function App() {
   // Fetch / Sync favorites with Firestore when user logs in/out
   useEffect(() => {
     if (!user) {
-      // If guest user, load from local storage
       const saved = localStorage.getItem('wc2026_favorites');
       if (saved) {
         try {
@@ -85,7 +92,6 @@ export default function App() {
               localStorage.setItem('wc2026_favorites', JSON.stringify(data.favorites));
             }
           } else {
-            // First time login - save existing local favorites to Firestore
             const saved = localStorage.getItem('wc2026_favorites');
             let initialFavorites = [];
             if (saved) {
@@ -116,7 +122,6 @@ export default function App() {
     setFavorites(updated);
     localStorage.setItem('wc2026_favorites', JSON.stringify(updated));
 
-    // Persist to Firestore if user is authenticated and database is active
     if (user && isFirebaseConfigured && db) {
       try {
         const docRef = doc(db, 'users', user.uid);
@@ -135,15 +140,6 @@ export default function App() {
       console.error('Error signing out:', error);
     }
   };
-
-  if (!flagsLoaded) {
-    return (
-      <div className="min-h-screen bg-[#0A0E17] flex flex-col items-center justify-center">
-        <div className="w-12 h-12 border-4 border-[#7cff4f]/20 border-t-[#7cff4f] rounded-full animate-spin mb-4" />
-        <span className="text-xs font-bold tracking-[0.25em] text-[#7cff4f] uppercase animate-pulse">Loading Tournament Data</span>
-      </div>
-    );
-  }
 
   return (
     <div className="relative min-h-screen bg-[#0A0E17] text-white flex flex-col font-body selection:bg-neon-green selection:text-dark-bg">

@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import {
@@ -9,11 +10,21 @@ import {
   Sparkles,
   Globe,
   Map,
+  Music,
+  Crown,
+  Heart,
 } from 'lucide-react';
 import CountdownTimer from '../components/CountdownTimer';
+import AnthemCard from '../components/AnthemCard';
+import LegendCard from '../components/LegendCard';
+import FanMomentCard from '../components/FanMomentCard';
+import StatsCounter from '../components/StatsCounter';
 import { getFlagUrl } from '../utils/flagService';
 import teams from '../data/teams';
 import { topScorers, tournamentStats } from '../data/stats';
+import anthems from '../data/anthems';
+import legends from '../data/legends';
+import fanMoments, { fanCategories, fanStats } from '../data/fanMoments';
 
 /* ─── Reusable Flag ─── */
 const Flag = ({ code, name, size = 'w-8 h-6' }) => {
@@ -85,6 +96,81 @@ const StatItem = ({ icon: Icon, value, label, delay, color = 'green' }) => (
     <span className="text-[10px] uppercase tracking-[0.15em] text-gray-500 font-semibold leading-none">{label}</span>
   </motion.div>
 );
+
+/* ─── Fan Moments Section (with filter state) ─── */
+const FanMomentsSection = () => {
+  const [activeFilter, setActiveFilter] = useState('All');
+  const filtered = activeFilter === 'All'
+    ? fanMoments
+    : fanMoments.filter((m) => m.category === activeFilter);
+
+  return (
+    <section className="py-16 sm:py-20 px-4 sm:px-6 relative z-10 w-full flex flex-col items-center justify-center">
+      <div className="w-full max-w-[95%] xl:max-w-[90%] mx-auto">
+        <SectionHeader
+          tag="Global Passion"
+          title="Fan Moments Around The World"
+          subtitle="Where passion, emotion, and football unite billions"
+        />
+
+        {/* Filter Pills */}
+        <div className="flex flex-wrap items-center justify-center gap-2 mb-8">
+          {fanCategories.map((cat) => (
+            <button
+              key={cat}
+              onClick={() => setActiveFilter(cat)}
+              className={`filter-pill ${activeFilter === cat ? 'active' : ''}`}
+            >
+              {cat}
+            </button>
+          ))}
+        </div>
+
+        {/* Hero Fan Card */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="relative w-full h-[280px] sm:h-[340px] rounded-3xl overflow-hidden mb-4 group"
+        >
+          <img
+            src={`${import.meta.env.BASE_URL}fan-hero.png`}
+            alt="Fans celebrating"
+            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0A0E17] via-[#0A0E17]/40 to-transparent" />
+          <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
+            <span className="inline-block text-[10px] font-bold uppercase tracking-[0.2em] text-[#7cff4f] bg-[#7cff4f]/[0.08] border border-[#7cff4f]/20 rounded-full px-3 py-1 mb-3">
+              The Heartbeat of Football
+            </span>
+            <h3 className="text-xl sm:text-2xl font-bold text-white leading-snug max-w-lg">
+              From every corner of the earth, supporters unite in a shared love for the beautiful game.
+            </h3>
+          </div>
+        </motion.div>
+
+        {/* Masonry Grid */}
+        <div className="masonry-grid">
+          {filtered.map((moment, i) => (
+            <div
+              key={moment.id}
+              className={`${
+                moment.size === 'tall' ? 'masonry-tall' : ''
+              } ${moment.size === 'wide' ? 'masonry-wide' : ''}`}
+            >
+              <FanMomentCard moment={moment} index={i} />
+            </div>
+          ))}
+        </div>
+
+        {/* Stats Counter Banner */}
+        <div className="mt-10">
+          <StatsCounter stats={fanStats} />
+        </div>
+      </div>
+    </section>
+  );
+};
 
 export default function Home({ onLoginClick }) {
   const groups = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L'];
@@ -255,6 +341,99 @@ export default function Home({ onLoginClick }) {
           </div>
         </div>
       </section>
+
+
+      {/* ═══ ANTHEMS ═══ */}
+      <section className="py-16 sm:py-24 px-4 sm:px-6 relative z-10 w-full flex flex-col items-center justify-center overflow-hidden">
+        {/* Ambient light effects */}
+        <div className="absolute top-0 left-1/4 w-[400px] h-[400px] rounded-full opacity-[0.05] pointer-events-none" style={{ background: 'radial-gradient(circle, #7cff4f, transparent 70%)' }} />
+        <div className="absolute bottom-0 right-1/4 w-[300px] h-[300px] rounded-full opacity-[0.04] pointer-events-none" style={{ background: 'radial-gradient(circle, #00E5FF, transparent 70%)' }} />
+
+        {/* Floating music particles */}
+        {['♪', '♫', '♬', '🎵', '♪', '♫'].map((note, i) => (
+          <motion.span
+            key={i}
+            className="absolute text-[#7cff4f]/[0.06] text-2xl sm:text-3xl pointer-events-none select-none"
+            style={{
+              left: `${12 + i * 16}%`,
+              top: `${20 + (i % 3) * 25}%`,
+            }}
+            animate={{
+              y: [0, -20, 0],
+              rotate: [0, i % 2 === 0 ? 15 : -15, 0],
+              opacity: [0.04, 0.1, 0.04],
+            }}
+            transition={{
+              duration: 4 + i * 0.5,
+              repeat: Infinity,
+              ease: 'easeInOut',
+              delay: i * 0.8,
+            }}
+          >
+            {note}
+          </motion.span>
+        ))}
+
+        <div className="w-full max-w-[95%] xl:max-w-[90%] mx-auto relative">
+          {/* Section Header */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-10 sm:mb-14"
+          >
+            <span className="inline-flex items-center gap-2 text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.25em] text-[#7cff4f] bg-[#7cff4f]/[0.04] border border-[#7cff4f]/15 rounded-full px-4 py-1.5 mb-5">
+              <span>🎶</span> Official Soundtracks
+            </span>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white font-heading mb-3 tracking-wide">
+              Official FIFA World Cup{' '}
+              <span className="text-gradient-neon">Anthems</span>
+            </h2>
+            {/* Neon underline animation */}
+            <motion.div
+              initial={{ width: 0 }}
+              whileInView={{ width: '120px' }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
+              className="h-[3px] mx-auto rounded-full mb-4"
+              style={{ background: 'linear-gradient(90deg, transparent, #7cff4f, transparent)' }}
+            />
+            <p className="text-gray-500 text-[14px] sm:text-[15px] max-w-2xl mx-auto leading-relaxed font-medium">
+              The songs that defined generations of football memories
+            </p>
+          </motion.div>
+
+          {/* 2-Column Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
+            {anthems.map((anthem, i) => (
+              <AnthemCard key={anthem.id} anthem={anthem} index={i} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+
+      {/* ═══ LEGENDS ═══ */}
+      <section className="py-16 sm:py-20 px-4 sm:px-6 relative z-10 w-full flex flex-col items-center justify-center">
+        <div className="w-full max-w-[95%] xl:max-w-[90%] mx-auto">
+          <SectionHeader
+            tag="Hall of Fame"
+            title="Legends of the World Cup"
+            subtitle="The icons who transformed football history"
+          />
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4">
+            {legends.map((legend, i) => (
+              <LegendCard key={legend.id} legend={legend} index={i} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+
+      {/* ═══ FAN MOMENTS ═══ */}
+      <FanMomentsSection />
 
 
       {/* ═══ CTA ═══ */}

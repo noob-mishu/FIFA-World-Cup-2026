@@ -1,0 +1,93 @@
+const fanMoments = [
+  {
+    id: 1,
+    caption: 'The roar of 80,000 — a goal that silenced time',
+    category: 'Celebrations',
+    country: 'Brazil',
+    countryFlag: '🇧🇷',
+    size: 'tall',
+    gradient: 'from-[#009c3b]/80 to-[#ffdf00]/40',
+    icon: '⚽',
+  },
+  {
+    id: 2,
+    caption: 'Painted in pride, united in passion',
+    category: 'Stadium Fans',
+    country: 'Argentina',
+    countryFlag: '🇦🇷',
+    size: 'normal',
+    gradient: 'from-[#74acdf]/80 to-[#002654]/60',
+    icon: '🎨',
+  },
+  {
+    id: 3,
+    caption: 'Streets alive — the city becomes the stadium',
+    category: 'Fan Zones',
+    country: 'Mexico',
+    countryFlag: '🇲🇽',
+    size: 'wide',
+    gradient: 'from-[#006341]/80 to-[#ce1126]/40',
+    icon: '🎉',
+  },
+  {
+    id: 4,
+    caption: 'A father and son witness history together',
+    category: 'Emotional Moments',
+    country: 'Germany',
+    countryFlag: '🇩🇪',
+    size: 'normal',
+    gradient: 'from-[#000000]/80 to-[#dd0000]/40',
+    icon: '❤️',
+  },
+  {
+    id: 5,
+    caption: 'Victory lap — champions celebrate with their people',
+    category: 'Celebrations',
+    country: 'France',
+    countryFlag: '🇫🇷',
+    size: 'normal',
+    gradient: 'from-[#002395]/80 to-[#ed2939]/40',
+    icon: '🏆',
+  },
+  {
+    id: 6,
+    caption: 'Midnight eruption — a nation wakes to glory',
+    category: 'Fan Zones',
+    country: 'Japan',
+    countryFlag: '🇯🇵',
+    size: 'tall',
+    gradient: 'from-[#bc002d]/80 to-[#ffffff]/30',
+    icon: '🌙',
+  },
+  {
+    id: 7,
+    caption: 'Tears of joy — the final whistle seals a dream',
+    category: 'Emotional Moments',
+    country: 'South Korea',
+    countryFlag: '🇰🇷',
+    size: 'normal',
+    gradient: 'from-[#003478]/80 to-[#c60c30]/40',
+    icon: '😭',
+  },
+  {
+    id: 8,
+    caption: 'From every corner of the earth, we are one',
+    category: 'Stadium Fans',
+    country: 'USA',
+    countryFlag: '🇺🇸',
+    size: 'wide',
+    gradient: 'from-[#3c3b6e]/80 to-[#b22234]/40',
+    icon: '🌎',
+  },
+];
+
+export const fanCategories = ['All', 'Celebrations', 'Stadium Fans', 'Fan Zones', 'Emotional Moments'];
+
+export const fanStats = [
+  { value: '5B+', label: 'Global Viewers' },
+  { value: '211', label: 'Nations Represented' },
+  { value: '3.5M', label: 'Fans Worldwide' },
+  { value: '16', label: 'Host Cities' },
+];
+
+export default fanMoments;
