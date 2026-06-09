@@ -34,7 +34,7 @@ export default function AnthemCard({ anthem, index }) {
       />
 
       {/* ─── Video / Thumbnail Area ─── */}
-      <div className="relative w-full aspect-[16/9] overflow-hidden">
+      <div className="relative w-full aspect-video overflow-hidden">
         {playing ? (
           /* Embedded YouTube Player */
           <iframe
@@ -53,9 +53,8 @@ export default function AnthemCard({ anthem, index }) {
               alt={title}
               loading="lazy"
               onLoad={() => setImgLoaded(true)}
-              className={`absolute inset-0 w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110 ${
-                imgLoaded ? 'opacity-100' : 'opacity-0'
-              }`}
+              className={`absolute inset-0 w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110 ${imgLoaded ? 'opacity-100' : 'opacity-0'
+                }`}
             />
 
             {/* Dark overlay gradient */}
@@ -97,9 +96,9 @@ export default function AnthemCard({ anthem, index }) {
       <div className="w-full h-px bg-white/[0.06]" />
 
       {/* ─── Info Area ─── */}
-      <div className="relative px-4 pt-5 pb-10 sm:px-6 sm:pt-6 sm:pb-12 md:px-7 md:pt-7 md:pb-14 lg:px-8 lg:pt-8 lg:pb-16 flex gap-4 sm:gap-5 md:gap-6 items-start">
+      <div className="relative mt-10 px-4 pt-5 pb-10 sm:px-6 sm:pt-6 sm:pb-12 md:px-7 md:pt-7 md:pb-14 lg:px-8 lg:pt-8 lg:pb-16 flex gap-4 sm:gap-5 md:gap-6 items-start">
         {/* Ranking Number */}
-        <div className="flex-shrink-0 pt-1">
+        <div className="shrink-0 pt-1">
           <span
             className="text-[48px] sm:text-[56px] md:text-[60px] font-black leading-none font-['Outfit'] select-none"
             style={{
@@ -115,7 +114,7 @@ export default function AnthemCard({ anthem, index }) {
         </div>
 
         {/* Song Info */}
-        <div className="flex-1 min-w-0 flex flex-col gap-4 sm:gap-5 group-hover:-translate-y-0.5 transition-transform duration-400">
+        <div className="flex-1 min-w-0 flex flex-col gap-2 sm:gap-2.5 group-hover:-translate-y-0.5 transition-transform duration-400">
           {/* Song Title */}
           <h3 className="text-base sm:text-lg md:text-xl font-bold text-white leading-snug font-['Outfit'] line-clamp-2 group-hover:text-[#7cff4f] transition-colors duration-300">
             {title}

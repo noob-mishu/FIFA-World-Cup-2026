@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import {
@@ -18,13 +17,12 @@ import CountdownTimer from '../components/CountdownTimer';
 import AnthemCard from '../components/AnthemCard';
 import LegendCard from '../components/LegendCard';
 import FanMomentCard from '../components/FanMomentCard';
-import StatsCounter from '../components/StatsCounter';
 import { getFlagUrl } from '../utils/flagService';
 import teams from '../data/teams';
 import { topScorers, tournamentStats } from '../data/stats';
 import anthems from '../data/anthems';
 import legends from '../data/legends';
-import fanMoments, { fanCategories, fanStats } from '../data/fanMoments';
+import fanMoments from '../data/fanMoments';
 
 /* ─── Reusable Flag ─── */
 const Flag = ({ code, name, size = 'w-8 h-6' }) => {
@@ -97,75 +95,90 @@ const StatItem = ({ icon: Icon, value, label, delay, color = 'green' }) => (
   </motion.div>
 );
 
-/* ─── Fan Moments Section (with filter state) ─── */
+/* ─── Fan Moments Section — Bangladesh ─── */
 const FanMomentsSection = () => {
-  const [activeFilter, setActiveFilter] = useState('All');
-  const filtered = activeFilter === 'All'
-    ? fanMoments
-    : fanMoments.filter((m) => m.category === activeFilter);
+  const heroMoment = fanMoments[0];
+  const gridPhotos = fanMoments.slice(1);
 
   return (
-    <section className="py-16 sm:py-20 px-4 sm:px-6 relative z-10 w-full flex flex-col items-center justify-center">
-      <div className="w-full max-w-[95%] xl:max-w-[90%] mx-auto">
+    <section id="fan-moments" className="py-16 sm:py-24 px-4 sm:px-6 relative z-10 w-full flex flex-col items-center justify-center overflow-hidden">
+      {/* Ambient lighting */}
+      <div className="absolute top-[10%] right-[-5%] w-[500px] h-[500px] rounded-full opacity-[0.04] pointer-events-none" style={{ background: 'radial-gradient(circle, #7cff4f, transparent 70%)' }} />
+      <div className="absolute bottom-[15%] left-[-5%] w-[400px] h-[400px] rounded-full opacity-[0.03] pointer-events-none" style={{ background: 'radial-gradient(circle, #00e5ff, transparent 70%)' }} />
+
+      {/* Floating particles */}
+      {['🇧🇩', '⚽', '📸', '🎉', '🏟️', '🇧🇩'].map((emoji, i) => (
+        <motion.span
+          key={i}
+          className="absolute text-xl sm:text-2xl pointer-events-none select-none opacity-[0.05]"
+          style={{
+            left: `${8 + i * 16}%`,
+            top: `${12 + (i % 3) * 28}%`,
+          }}
+          animate={{
+            y: [0, -12, 0],
+            rotate: [0, i % 2 === 0 ? 8 : -8, 0],
+            opacity: [0.03, 0.08, 0.03],
+          }}
+          transition={{
+            duration: 6 + i * 0.5,
+            repeat: Infinity,
+            ease: 'easeInOut',
+            delay: i * 0.8,
+          }}
+        >
+          {emoji}
+        </motion.span>
+      ))}
+
+      <div className="w-full max-w-[95%] xl:max-w-[90%] mx-auto relative">
+        {/* Section Header — matches website style */}
         <SectionHeader
-          tag="Global Passion"
-          title="Fan Moments Around The World"
-          subtitle="Where passion, emotion, and football unite billions"
+          tag="🇧🇩 Bangladesh Fan Album"
+          title="Fan Moments in Bangladesh"
+          subtitle="Where 170 million hearts beat for Argentina and Brazil — the world's most passionate football nation that doesn't even play in the World Cup"
         />
 
-        {/* Filter Pills */}
-        <div className="flex flex-wrap items-center justify-center gap-2 mb-8">
-          {fanCategories.map((cat) => (
-            <button
-              key={cat}
-              onClick={() => setActiveFilter(cat)}
-              className={`filter-pill ${activeFilter === cat ? 'active' : ''}`}
-            >
-              {cat}
-            </button>
-          ))}
-        </div>
-
-        {/* Hero Fan Card */}
+        {/* ── Hero Photo ── */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="relative w-full h-[280px] sm:h-[340px] rounded-3xl overflow-hidden mb-4 group"
+          transition={{ duration: 0.7 }}
+          className="relative w-full h-[300px] sm:h-[400px] md:h-[480px] rounded-3xl overflow-hidden mb-6 group cursor-pointer"
         >
           <img
-            src={`${import.meta.env.BASE_URL}fan-hero.png`}
-            alt="Fans celebrating"
-            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            src={heroMoment.image}
+            alt={heroMoment.title}
+            className="w-full h-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0A0E17] via-[#0A0E17]/40 to-transparent" />
-          <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
-            <span className="inline-block text-[10px] font-bold uppercase tracking-[0.2em] text-[#7cff4f] bg-[#7cff4f]/[0.08] border border-[#7cff4f]/20 rounded-full px-3 py-1 mb-3">
-              The Heartbeat of Football
-            </span>
-            <h3 className="text-xl sm:text-2xl font-bold text-white leading-snug max-w-lg">
-              From every corner of the earth, supporters unite in a shared love for the beautiful game.
+          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
+          <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8 md:p-10">
+            <div className="flex items-center gap-3 mb-3">
+              <span className="inline-flex items-center gap-1.5 bg-black/40 backdrop-blur-xl border border-white/[0.08] rounded-full px-3 py-1.5">
+                <MapPin className="w-3 h-3 text-[#7cff4f]" />
+                <span className="text-[10px] font-bold uppercase tracking-wider text-gray-200 font-['Inter']">{heroMoment.location}</span>
+              </span>
+              <span className="bg-black/40 backdrop-blur-xl border border-white/[0.08] rounded-full px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider text-gray-200 font-['Inter']">
+                {heroMoment.tag}
+              </span>
+            </div>
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-white leading-snug font-heading tracking-wide max-w-2xl mb-2">
+              {heroMoment.title}
             </h3>
+            <p className="text-sm text-gray-400 leading-relaxed font-['Inter'] max-w-xl font-medium">
+              {heroMoment.caption}
+            </p>
           </div>
+          {/* Hover glow */}
+          <div className="absolute inset-0 rounded-3xl border border-transparent group-hover:border-[#7cff4f]/15 transition-colors duration-500 pointer-events-none" />
         </motion.div>
 
-        {/* Masonry Grid */}
-        <div className="masonry-grid">
-          {filtered.map((moment, i) => (
-            <div
-              key={moment.id}
-              className={`${
-                moment.size === 'tall' ? 'masonry-tall' : ''
-              } ${moment.size === 'wide' ? 'masonry-wide' : ''}`}
-            >
-              <FanMomentCard moment={moment} index={i} />
-            </div>
+        {/* ── Photo Grid ── */}
+        <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4">
+          {gridPhotos.map((moment, i) => (
+            <FanMomentCard key={moment.id} moment={moment} index={i} />
           ))}
-        </div>
-
-        {/* Stats Counter Banner */}
-        <div className="mt-10">
-          <StatsCounter stats={fanStats} />
         </div>
       </div>
     </section>
@@ -183,7 +196,7 @@ export default function Home({ onLoginClick }) {
       <div className="absolute bottom-[25%] right-[-10%] w-[500px] h-[500px] rounded-full bg-[#7CFF4F]/3 filter blur-[130px] pointer-events-none z-0" />
 
       {/* ═══ HERO ═══ */}
-      <section className="relative min-h-screen flex items-center justify-center px-4">
+      <section id="hero" className="relative min-h-screen flex items-center justify-center px-4">
         {/* Background */}
         <div className="absolute inset-0">
           <img src={`${import.meta.env.BASE_URL}stadium-bg.png`} alt="" className="w-full h-full object-cover" />
@@ -272,7 +285,7 @@ export default function Home({ onLoginClick }) {
       </section>
 
       {/* ═══ STATS ═══ */}
-      <section className="py-16 sm:py-20 px-4 sm:px-6 relative z-10 w-full flex flex-col items-center justify-center">
+      <section id="stats" className="py-16 sm:py-20 px-4 sm:px-6 relative z-10 w-full flex flex-col items-center justify-center">
         <div className="w-full max-w-[95%] xl:max-w-[90%] mx-auto">
           <SectionHeader
             tag="Tournament Overview"
@@ -291,7 +304,7 @@ export default function Home({ onLoginClick }) {
       </section>
 
       {/* ═══ TEAMS ═══ */}
-      <section className="py-16 sm:py-20 px-4 sm:px-6 relative z-10 w-full flex flex-col items-center justify-center">
+      <section id="teams" className="py-16 sm:py-20 px-4 sm:px-6 relative z-10 w-full flex flex-col items-center justify-center">
         <div className="w-full max-w-[95%] xl:max-w-[90%] mx-auto">
           <SectionHeader
             tag="Participating Nations"
@@ -344,7 +357,7 @@ export default function Home({ onLoginClick }) {
 
 
       {/* ═══ ANTHEMS ═══ */}
-      <section className="py-16 sm:py-24 px-4 sm:px-6 relative z-10 w-full flex flex-col items-center justify-center overflow-hidden">
+      <section id="anthems" className="py-16 sm:py-24 px-4 sm:px-6 relative z-10 w-full flex flex-col items-center justify-center overflow-hidden">
         {/* Ambient light effects */}
         <div className="absolute top-0 left-1/4 w-[400px] h-[400px] rounded-full opacity-[0.05] pointer-events-none" style={{ background: 'radial-gradient(circle, #7cff4f, transparent 70%)' }} />
         <div className="absolute bottom-0 right-1/4 w-[300px] h-[300px] rounded-full opacity-[0.04] pointer-events-none" style={{ background: 'radial-gradient(circle, #00E5FF, transparent 70%)' }} />
@@ -381,12 +394,12 @@ export default function Home({ onLoginClick }) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-10 sm:mb-14"
+            className="w-full flex flex-col items-center justify-center text-center mb-8"
           >
-            <span className="inline-flex items-center gap-2 text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.25em] text-[#7cff4f] bg-[#7cff4f]/[0.04] border border-[#7cff4f]/15 rounded-full px-4 py-1.5 mb-5">
+            <span className="inline-flex items-center gap-2 text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.25em] text-[#7cff4f] bg-[#7cff4f]/[0.04] border border-[#7cff4f]/15 rounded-full px-4 py-1.5 mb-5 mx-auto">
               <span>🎶</span> Official Soundtracks
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white font-heading mb-3 tracking-wide">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white font-heading mb-3 tracking-wide text-center w-full">
               Official FIFA World Cup{' '}
               <span className="text-gradient-neon">Anthems</span>
             </h2>
@@ -399,13 +412,13 @@ export default function Home({ onLoginClick }) {
               className="h-[3px] mx-auto rounded-full mb-4"
               style={{ background: 'linear-gradient(90deg, transparent, #7cff4f, transparent)' }}
             />
-            <p className="text-gray-500 text-[14px] sm:text-[15px] max-w-2xl mx-auto leading-relaxed font-medium">
+            <p className="text-gray-500 text-[14px] sm:text-[15px] max-w-2xl mx-auto leading-relaxed font-medium text-center">
               The songs that defined generations of football memories
             </p>
           </motion.div>
 
           {/* 2-Column Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 mt-20 sm:mt-28">
             {anthems.map((anthem, i) => (
               <AnthemCard key={anthem.id} anthem={anthem} index={i} />
             ))}
@@ -415,7 +428,7 @@ export default function Home({ onLoginClick }) {
 
 
       {/* ═══ LEGENDS ═══ */}
-      <section className="py-16 sm:py-20 px-4 sm:px-6 relative z-10 w-full flex flex-col items-center justify-center">
+      <section id="legends" className="py-16 sm:py-20 px-4 sm:px-6 relative z-10 w-full flex flex-col items-center justify-center">
         <div className="w-full max-w-[95%] xl:max-w-[90%] mx-auto">
           <SectionHeader
             tag="Hall of Fame"
@@ -423,7 +436,7 @@ export default function Home({ onLoginClick }) {
             subtitle="The icons who transformed football history"
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-5">
             {legends.map((legend, i) => (
               <LegendCard key={legend.id} legend={legend} index={i} />
             ))}
@@ -437,7 +450,7 @@ export default function Home({ onLoginClick }) {
 
 
       {/* ═══ CTA ═══ */}
-      <section className="py-16 sm:py-20 px-4 sm:px-6 relative z-10 w-full flex flex-col items-center justify-center">
+      <section id="cta" className="py-16 sm:py-20 px-4 sm:px-6 relative z-10 w-full flex flex-col items-center justify-center">
         <div className="max-w-5xl w-full mx-auto text-center flex flex-col items-center justify-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}

@@ -1,8 +1,8 @@
 const anthems = [
   {
     id: 1,
-    title: 'Kick Off the Dream',
-    artist: 'FIFA World Cup 2026 Official',
+    title: 'Dai Dai (Official Video)',
+    artist: 'Shakira, Burna Boy',
     year: 2026,
     wcEdition: 'FIFA World Cup 2026',
     hostCountry: 'USA · Mexico · Canada',
@@ -11,8 +11,8 @@ const anthems = [
   },
   {
     id: 2,
-    title: 'United by Football',
-    artist: 'FIFA World Cup 2026 Official',
+    title: 'World Cup (Champions)',
+    artist: 'IShowSpeed',
     year: 2026,
     wcEdition: 'FIFA World Cup 2026',
     hostCountry: 'USA · Mexico · Canada',
@@ -31,8 +31,8 @@ const anthems = [
   },
   {
     id: 4,
-    title: 'Tukoh Taka',
-    artist: 'Nicki Minaj, Maluma & Myriam Fares',
+    title: 'Dreamers',
+    artist: 'Jung Kook (of BTS) ft. Fahad Al Kubaisi',
     year: 2022,
     wcEdition: 'FIFA World Cup 2022',
     hostCountry: 'Qatar',
@@ -61,8 +61,8 @@ const anthems = [
   },
   {
     id: 7,
-    title: 'Dar um Jeito (We Will Find a Way)',
-    artist: 'Santana ft. Wyclef, Avicii & Alexandre Pires',
+    title: 'La La La (Brazil 2014)',
+    artist: 'Shakira ft. Carlinhos Brown',
     year: 2014,
     wcEdition: 'FIFA World Cup 2014',
     hostCountry: 'Brazil',

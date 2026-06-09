@@ -1,103 +1,98 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Heart } from 'lucide-react';
+import { Heart, MapPin } from 'lucide-react';
 
-const sizeClasses = {
-  tall: 'min-h-[380px]',
-  wide: 'min-h-[220px]',
-  normal: 'min-h-[280px]',
-};
-
+/**
+ * FanMomentCard — Premium glassmorphism photo card
+ * Aesthetic: cinematic overlay, glowing borders, smooth reveals, parallax-like hover
+ */
 export default function FanMomentCard({ moment, index }) {
-  const { caption, category, country, countryFlag, size, gradient, icon } =
-    moment;
-
+  const { image, title, caption, location, tag } = moment;
   const [liked, setLiked] = useState(false);
-
-  const heightClass = sizeClasses[size] || sizeClasses.normal;
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 30, scale: 0.97 }}
+      initial={{ opacity: 0, y: 40, scale: 0.95 }}
       whileInView={{ opacity: 1, y: 0, scale: 1 }}
-      viewport={{ once: true, margin: '-40px' }}
-      transition={{ duration: 0.5, delay: index * 0.06, ease: 'easeOut' }}
-      className={`rounded-2xl overflow-hidden relative group cursor-pointer ${heightClass}`}
+      viewport={{ once: true, margin: '-60px' }}
+      transition={{ duration: 0.6, delay: index * 0.07, ease: [0.25, 0.46, 0.45, 0.94] }}
+      className="group cursor-pointer relative"
     >
-      {/* Gradient Background */}
       <div
-        className={`absolute inset-0 bg-gradient-to-br ${gradient} transition-all duration-500 group-hover:brightness-110`}
-      />
-
-      {/* Dot pattern overlay */}
-      <div
-        className="absolute inset-0 opacity-[0.06]"
-        style={{
-          backgroundImage:
-            'radial-gradient(circle at 1px 1px, rgba(255,255,255,0.5) 1px, transparent 0)',
-          backgroundSize: '20px 20px',
-        }}
-      />
-
-      {/* Large centered icon */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <span className="text-6xl sm:text-7xl opacity-30 select-none">
-          {icon}
-        </span>
-      </div>
-
-      {/* Category Badge */}
-      <div className="absolute top-3 left-3 z-10">
-        <span className="bg-white/[0.08] backdrop-blur-md border border-white/[0.08] rounded-full px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-gray-300 font-['Inter']">
-          {category}
-        </span>
-      </div>
-
-      {/* Country Badge */}
-      <div className="absolute top-3 right-3 z-10">
-        <span className="bg-white/[0.08] backdrop-blur-md border border-white/[0.08] rounded-full px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-gray-300 font-['Inter']">
-          {countryFlag} {country}
-        </span>
-      </div>
-
-      {/* Bottom Info Panel */}
-      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4 pt-10 z-10">
-        <p className="text-sm font-semibold text-white leading-snug font-['Inter'] pr-10">
-          {caption}
-        </p>
-      </div>
-
-      {/* Heart Button */}
-      <motion.button
-        className="absolute bottom-4 right-4 z-20 w-8 h-8 rounded-full bg-white/[0.08] flex items-center justify-center backdrop-blur-sm border border-white/[0.06] transition-colors duration-300 hover:bg-white/[0.15]"
-        onClick={(e) => {
-          e.stopPropagation();
-          setLiked((prev) => !prev);
-        }}
-        whileTap={{ scale: 0.8 }}
+        className="relative rounded-2xl overflow-hidden transition-all duration-500
+          bg-white/[0.02] border border-white/[0.06]
+          hover:border-[#7cff4f]/25
+          hover:shadow-[0_0_0_1px_rgba(124,255,79,0.06),0_20px_60px_-12px_rgba(0,0,0,0.5),0_0_30px_-5px_rgba(124,255,79,0.08)]"
       >
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={liked ? 'liked' : 'unliked'}
-            initial={{ scale: 0.5, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            exit={{ scale: 0.5, opacity: 0 }}
-            transition={{ duration: 0.2 }}
-          >
-            <Heart
-              size={14}
-              className={
-                liked
-                  ? 'text-red-500 fill-red-500'
-                  : 'text-gray-400'
-              }
-            />
-          </motion.div>
-        </AnimatePresence>
-      </motion.button>
+        {/* ── Image Container ── */}
+        <div className="relative overflow-hidden aspect-[16/9]">
+          {/* Skeleton loader */}
+          {!imageLoaded && (
+            <div className="absolute inset-0 animate-pulse">
+              <div className="w-full h-full bg-gradient-to-br from-white/[0.06] via-white/[0.02] to-white/[0.04]" />
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="w-8 h-8 rounded-full border-2 border-white/10 border-t-[#7cff4f]/40 animate-spin" />
+              </div>
+            </div>
+          )}
 
-      {/* Hover shimmer overlay */}
-      <div className="absolute inset-0 bg-white/[0.0] group-hover:bg-white/[0.03] transition-all duration-500 pointer-events-none" />
+          <img
+            src={image}
+            alt={title}
+            onLoad={() => setImageLoaded(true)}
+            className={`w-full h-full object-cover transition-all duration-[800ms] ease-out
+              group-hover:scale-[1.08]
+              ${imageLoaded ? 'opacity-100' : 'opacity-0'}
+            `}
+          />
+
+          {/* Light cinematic gradient overlay */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-70 group-hover:opacity-85 transition-opacity duration-500" />
+
+          {/* Subtle film grain texture */}
+          <div
+            className="absolute inset-0 opacity-[0.025] mix-blend-overlay pointer-events-none"
+            style={{
+              backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")`,
+            }}
+          />
+
+          {/* Heart button */}
+          <div className="absolute top-3 right-3 z-10">
+            <motion.button
+              className="w-7 h-7 rounded-full bg-black/30 backdrop-blur-xl flex items-center justify-center border border-white/10 opacity-0 group-hover:opacity-100 transition-all duration-300 shadow-lg"
+              onClick={(e) => {
+                e.stopPropagation();
+                setLiked((prev) => !prev);
+              }}
+              whileTap={{ scale: 0.75 }}
+              whileHover={{ scale: 1.15, backgroundColor: 'rgba(255,255,255,0.15)' }}
+            >
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={liked ? 'liked' : 'unliked'}
+                  initial={{ scale: 0, rotate: -30 }}
+                  animate={{ scale: 1, rotate: 0 }}
+                  exit={{ scale: 0, rotate: 30 }}
+                  transition={{ type: 'spring', stiffness: 400, damping: 15 }}
+                >
+                  <Heart
+                    size={12}
+                    className={liked
+                      ? 'text-red-400 fill-red-400 drop-shadow-[0_0_8px_rgba(248,113,113,0.6)]'
+                      : 'text-white/60'
+                    }
+                  />
+                </motion.div>
+              </AnimatePresence>
+            </motion.button>
+          </div>
+        </div>
+      </div>
+
+      {/* Glow reflection under card on hover */}
+      <div className="absolute -bottom-2 left-[10%] right-[10%] h-8 rounded-full bg-[#7cff4f]/0 group-hover:bg-[#7cff4f]/[0.03] blur-xl transition-all duration-500 pointer-events-none" />
     </motion.div>
   );
 }
