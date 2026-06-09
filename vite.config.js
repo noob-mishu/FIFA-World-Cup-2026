@@ -10,5 +10,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: '/FIFA-World-Cup-2026/'
+  base: './'
 })
