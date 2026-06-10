@@ -86,9 +86,11 @@ export default function FixtureCard({ fixture, isFavorite, onToggleFavorite }) {
                 </div>
               )}
             </div>
-            <span className="text-[11px] sm:text-[12px] font-extrabold text-gray-300 group-hover:text-white text-center tracking-wide uppercase transition-colors duration-300 break-words whitespace-normal w-full px-1 leading-tight font-['Outfit']">
-              {homeTeam.name}
-            </span>
+            <div className="h-8 sm:h-10 flex items-center justify-center w-full">
+              <span className="text-[11px] sm:text-[12px] font-extrabold text-gray-300 group-hover:text-white text-center tracking-wide uppercase transition-colors duration-300 break-words whitespace-normal px-1 leading-tight font-['Outfit']">
+                {homeTeam.name}
+              </span>
+            </div>
           </div>
 
           {/* Left Divider */}
@@ -130,9 +132,11 @@ export default function FixtureCard({ fixture, isFavorite, onToggleFavorite }) {
                 </div>
               )}
             </div>
-            <span className="text-[11px] sm:text-[12px] font-extrabold text-gray-300 group-hover:text-white text-center tracking-wide uppercase transition-colors duration-300 break-words whitespace-normal w-full px-1 leading-tight font-['Outfit']">
-              {awayTeam.name}
-            </span>
+            <div className="h-8 sm:h-10 flex items-center justify-center w-full">
+              <span className="text-[11px] sm:text-[12px] font-extrabold text-gray-300 group-hover:text-white text-center tracking-wide uppercase transition-colors duration-300 break-words whitespace-normal px-1 leading-tight font-['Outfit']">
+                {awayTeam.name}
+              </span>
+            </div>
           </div>
         </div>
 
