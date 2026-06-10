@@ -1586,16 +1586,16 @@ const fixtures = [
   {
     "id": 73,
     "homeTeam": {
-      "name": "2A",
+      "name": "Group A runners-up",
       "code": "TBD",
       "flag": "🏳️"
     },
     "awayTeam": {
-      "name": "2B",
+      "name": "Group B runners-up",
       "code": "TBD",
       "flag": "🏳️"
     },
-    "date": "June 29, 2026",
+    "date": "June 28, 2026",
     "time": "1:00 AM",
     "stadium": "SoFi Stadium",
     "city": "Los Angeles, USA",
@@ -1608,39 +1608,17 @@ const fixtures = [
   {
     "id": 74,
     "homeTeam": {
-      "name": "1C",
+      "name": "Group E winners",
       "code": "TBD",
       "flag": "🏳️"
     },
     "awayTeam": {
-      "name": "2F",
+      "name": "Group A/B/C/D/F third place",
       "code": "TBD",
       "flag": "🏳️"
     },
     "date": "June 29, 2026",
     "time": "11:00 PM",
-    "stadium": "NRG Stadium",
-    "city": "Houston, USA",
-    "group": "Final",
-    "stage": "Round of 32",
-    "score": null,
-    "isLive": false,
-    "minute": null
-  },
-  {
-    "id": 75,
-    "homeTeam": {
-      "name": "1E",
-      "code": "TBD",
-      "flag": "🏳️"
-    },
-    "awayTeam": {
-      "name": "3A/B/C/D/F",
-      "code": "TBD",
-      "flag": "🏳️"
-    },
-    "date": "June 30, 2026",
-    "time": "2:30 AM",
     "stadium": "Gillette Stadium",
     "city": "Boston, USA",
     "group": "Final",
@@ -1650,19 +1628,19 @@ const fixtures = [
     "minute": null
   },
   {
-    "id": 76,
+    "id": 75,
     "homeTeam": {
-      "name": "1F",
+      "name": "Group F winners",
       "code": "TBD",
       "flag": "🏳️"
     },
     "awayTeam": {
-      "name": "2C",
+      "name": "Group C runners-up",
       "code": "TBD",
       "flag": "🏳️"
     },
-    "date": "June 30, 2026",
-    "time": "7:00 AM",
+    "date": "June 29, 2026",
+    "time": "2:30 AM",
     "stadium": "Estadio Monterrey",
     "city": "Monterrey, Mexico",
     "group": "Final",
@@ -1672,21 +1650,21 @@ const fixtures = [
     "minute": null
   },
   {
-    "id": 77,
+    "id": 76,
     "homeTeam": {
-      "name": "2E",
+      "name": "Group C winners",
       "code": "TBD",
       "flag": "🏳️"
     },
     "awayTeam": {
-      "name": "2I",
+      "name": "Group F runners-up",
       "code": "TBD",
       "flag": "🏳️"
     },
-    "date": "June 30, 2026",
-    "time": "11:00 PM",
-    "stadium": "AT&T Stadium",
-    "city": "Dallas, USA",
+    "date": "June 29, 2026",
+    "time": "7:00 AM",
+    "stadium": "NRG Stadium",
+    "city": "Houston, USA",
     "group": "Final",
     "stage": "Round of 32",
     "score": null,
@@ -1694,19 +1672,19 @@ const fixtures = [
     "minute": null
   },
   {
-    "id": 78,
+    "id": 77,
     "homeTeam": {
-      "name": "1I",
+      "name": "Group I winners",
       "code": "TBD",
       "flag": "🏳️"
     },
     "awayTeam": {
-      "name": "3C/D/F/G/H",
+      "name": "Group C/D/F/G/H third place",
       "code": "TBD",
       "flag": "🏳️"
     },
-    "date": "July 1, 2026",
-    "time": "3:00 AM",
+    "date": "June 30, 2026",
+    "time": "11:00 PM",
     "stadium": "MetLife Stadium",
     "city": "East Rutherford, USA",
     "group": "Final",
@@ -1716,18 +1694,40 @@ const fixtures = [
     "minute": null
   },
   {
-    "id": 79,
+    "id": 78,
     "homeTeam": {
-      "name": "1A",
+      "name": "Group E runners-up",
       "code": "TBD",
       "flag": "🏳️"
     },
     "awayTeam": {
-      "name": "3C/E/F/H/I",
+      "name": "Group I runners-up",
       "code": "TBD",
       "flag": "🏳️"
     },
-    "date": "July 1, 2026",
+    "date": "June 30, 2026",
+    "time": "3:00 AM",
+    "stadium": "AT&T Stadium",
+    "city": "Dallas, USA",
+    "group": "Final",
+    "stage": "Round of 32",
+    "score": null,
+    "isLive": false,
+    "minute": null
+  },
+  {
+    "id": 79,
+    "homeTeam": {
+      "name": "Group A winners",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "awayTeam": {
+      "name": "Group C/E/F/H/I third place",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "date": "June 30, 2026",
     "time": "7:00 AM",
     "stadium": "Estadio Azteca",
     "city": "Mexico City, Mexico",
@@ -1740,12 +1740,12 @@ const fixtures = [
   {
     "id": 80,
     "homeTeam": {
-      "name": "1L",
+      "name": "Group L winners",
       "code": "TBD",
       "flag": "🏳️"
     },
     "awayTeam": {
-      "name": "3E/H/I/J/K",
+      "name": "Group E/H/I/J/K third place",
       "code": "TBD",
       "flag": "🏳️"
     },
@@ -1762,39 +1762,17 @@ const fixtures = [
   {
     "id": 81,
     "homeTeam": {
-      "name": "1G",
+      "name": "Group D winners",
       "code": "TBD",
       "flag": "🏳️"
     },
     "awayTeam": {
-      "name": "3A/E/H/I/J",
+      "name": "Group B/E/F/I/J third place",
       "code": "TBD",
       "flag": "🏳️"
     },
-    "date": "July 2, 2026",
+    "date": "July 1, 2026",
     "time": "2:00 AM",
-    "stadium": "Lumen Field",
-    "city": "Seattle, USA",
-    "group": "Final",
-    "stage": "Round of 32",
-    "score": null,
-    "isLive": false,
-    "minute": null
-  },
-  {
-    "id": 82,
-    "homeTeam": {
-      "name": "1D",
-      "code": "TBD",
-      "flag": "🏳️"
-    },
-    "awayTeam": {
-      "name": "3B/E/F/I/J",
-      "code": "TBD",
-      "flag": "🏳️"
-    },
-    "date": "July 2, 2026",
-    "time": "6:00 AM",
     "stadium": "Levi's Stadium",
     "city": "San Francisco, USA",
     "group": "Final",
@@ -1804,21 +1782,21 @@ const fixtures = [
     "minute": null
   },
   {
-    "id": 83,
+    "id": 82,
     "homeTeam": {
-      "name": "1H",
+      "name": "Group G winners",
       "code": "TBD",
       "flag": "🏳️"
     },
     "awayTeam": {
-      "name": "2J",
+      "name": "Group A/E/H/I/J third place",
       "code": "TBD",
       "flag": "🏳️"
     },
-    "date": "July 3, 2026",
-    "time": "1:00 AM",
-    "stadium": "SoFi Stadium",
-    "city": "Los Angeles, USA",
+    "date": "July 1, 2026",
+    "time": "6:00 AM",
+    "stadium": "Lumen Field",
+    "city": "Seattle, USA",
     "group": "Final",
     "stage": "Round of 32",
     "score": null,
@@ -1826,19 +1804,19 @@ const fixtures = [
     "minute": null
   },
   {
-    "id": 84,
+    "id": 83,
     "homeTeam": {
-      "name": "2K",
+      "name": "Group K runners-up",
       "code": "TBD",
       "flag": "🏳️"
     },
     "awayTeam": {
-      "name": "2L",
+      "name": "Group L runners-up",
       "code": "TBD",
       "flag": "🏳️"
     },
-    "date": "July 3, 2026",
-    "time": "5:00 AM",
+    "date": "July 2, 2026",
+    "time": "1:00 AM",
     "stadium": "BMO Field",
     "city": "Toronto, Canada",
     "group": "Final",
@@ -1848,18 +1826,40 @@ const fixtures = [
     "minute": null
   },
   {
-    "id": 85,
+    "id": 84,
     "homeTeam": {
-      "name": "1B",
+      "name": "Group H winners",
       "code": "TBD",
       "flag": "🏳️"
     },
     "awayTeam": {
-      "name": "3E/F/G/I/J",
+      "name": "Group J runners-up",
       "code": "TBD",
       "flag": "🏳️"
     },
-    "date": "July 3, 2026",
+    "date": "July 2, 2026",
+    "time": "5:00 AM",
+    "stadium": "SoFi Stadium",
+    "city": "Los Angeles, USA",
+    "group": "Final",
+    "stage": "Round of 32",
+    "score": null,
+    "isLive": false,
+    "minute": null
+  },
+  {
+    "id": 85,
+    "homeTeam": {
+      "name": "Group B winners",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "awayTeam": {
+      "name": "Group E/F/G/I/J third place",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "date": "July 2, 2026",
     "time": "9:00 AM",
     "stadium": "BC Place",
     "city": "Vancouver, Canada",
@@ -1872,39 +1872,17 @@ const fixtures = [
   {
     "id": 86,
     "homeTeam": {
-      "name": "2D",
+      "name": "Group J winners",
       "code": "TBD",
       "flag": "🏳️"
     },
     "awayTeam": {
-      "name": "2G",
+      "name": "Group H runners-up",
       "code": "TBD",
       "flag": "🏳️"
     },
-    "date": "July 4, 2026",
+    "date": "July 3, 2026",
     "time": "12:00 AM",
-    "stadium": "AT&T Stadium",
-    "city": "Dallas, USA",
-    "group": "Final",
-    "stage": "Round of 32",
-    "score": null,
-    "isLive": false,
-    "minute": null
-  },
-  {
-    "id": 87,
-    "homeTeam": {
-      "name": "1J",
-      "code": "TBD",
-      "flag": "🏳️"
-    },
-    "awayTeam": {
-      "name": "2H",
-      "code": "TBD",
-      "flag": "🏳️"
-    },
-    "date": "July 4, 2026",
-    "time": "4:00 AM",
     "stadium": "Hard Rock Stadium",
     "city": "Miami, USA",
     "group": "Final",
@@ -1914,21 +1892,43 @@ const fixtures = [
     "minute": null
   },
   {
-    "id": 88,
+    "id": 87,
     "homeTeam": {
-      "name": "1K",
+      "name": "Group K winners",
       "code": "TBD",
       "flag": "🏳️"
     },
     "awayTeam": {
-      "name": "3D/E/I/J/L",
+      "name": "Group D/E/I/J/L third place",
       "code": "TBD",
       "flag": "🏳️"
     },
-    "date": "July 4, 2026",
-    "time": "7:30 AM",
+    "date": "July 3, 2026",
+    "time": "4:00 AM",
     "stadium": "GEHA Field at Arrowhead Stadium",
     "city": "Kansas City, USA",
+    "group": "Final",
+    "stage": "Round of 32",
+    "score": null,
+    "isLive": false,
+    "minute": null
+  },
+  {
+    "id": 88,
+    "homeTeam": {
+      "name": "Group D runners-up",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "awayTeam": {
+      "name": "Group G runners-up",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "date": "July 3, 2026",
+    "time": "7:30 AM",
+    "stadium": "AT&T Stadium",
+    "city": "Dallas, USA",
     "group": "Final",
     "stage": "Round of 32",
     "score": null,
