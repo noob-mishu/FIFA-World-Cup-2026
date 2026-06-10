@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
-const KICKOFF = new Date('2026-06-11T20:00:00Z').getTime();
+const KICKOFF = new Date('2026-06-12T01:00:00+06:00').getTime();
 
 function calcDelta() {
   const diff = Math.max(0, KICKOFF - Date.now());
