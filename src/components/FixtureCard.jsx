@@ -86,7 +86,7 @@ export default function FixtureCard({ fixture, isFavorite, onToggleFavorite }) {
                 </div>
               )}
             </div>
-            <span className="text-[11px] sm:text-[12px] font-extrabold text-gray-300 group-hover:text-white text-center tracking-wide uppercase transition-colors duration-300 truncate w-full px-1 leading-tight font-['Outfit']">
+            <span className="text-[11px] sm:text-[12px] font-extrabold text-gray-300 group-hover:text-white text-center tracking-wide uppercase transition-colors duration-300 break-words whitespace-normal w-full px-1 leading-tight font-['Outfit']">
               {homeTeam.name}
             </span>
           </div>
@@ -130,7 +130,7 @@ export default function FixtureCard({ fixture, isFavorite, onToggleFavorite }) {
                 </div>
               )}
             </div>
-            <span className="text-[11px] sm:text-[12px] font-extrabold text-gray-300 group-hover:text-white text-center tracking-wide uppercase transition-colors duration-300 truncate w-full px-1 leading-tight font-['Outfit']">
+            <span className="text-[11px] sm:text-[12px] font-extrabold text-gray-300 group-hover:text-white text-center tracking-wide uppercase transition-colors duration-300 break-words whitespace-normal w-full px-1 leading-tight font-['Outfit']">
               {awayTeam.name}
             </span>
           </div>
