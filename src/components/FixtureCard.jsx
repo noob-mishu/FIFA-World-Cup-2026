@@ -3,8 +3,13 @@ import { Heart, Clock, MapPin } from 'lucide-react';
 import { getFlagUrl } from '../utils/flagService';
 
 const formatTime = (timeStr) => {
-  const parts = timeStr.split(':');
-  if (parts.length < 2) return timeStr;
+  if (!timeStr) return '';
+  let formatted = timeStr.trim();
+  if (formatted.toLowerCase().endsWith('am') || formatted.toLowerCase().endsWith('pm')) {
+    return formatted.toUpperCase();
+  }
+  const parts = formatted.split(':');
+  if (parts.length < 2) return formatted;
   let hour = parseInt(parts[0], 10);
   const min = parts[1];
   const ampm = hour >= 12 ? 'PM' : 'AM';
@@ -101,15 +106,12 @@ export default function FixtureCard({ fixture, isFavorite, onToggleFavorite }) {
                 </span>
               </div>
             ) : (
-              <div className="flex flex-col items-center gap-1">
-                <span className="inline-flex items-center gap-1 bg-white/[0.04] border border-white/[0.08] px-2.5 py-1 rounded-full shadow-inner">
-                  <Clock className="w-2.5 h-2.5 text-[#7cff4f]/80" />
-                  <span className="text-[10px] sm:text-[11px] font-extrabold text-white leading-none tracking-tight">
-                    {formatTime(time)}
-                  </span>
+              <div className="flex flex-col items-center gap-1.5">
+                <span className="text-xs sm:text-sm font-black tracking-wider text-[#7cff4f] uppercase whitespace-nowrap">
+                  Local Time (BD)
                 </span>
-                <span className="text-[6.5px] font-bold tracking-[0.15em] text-gray-500 uppercase mt-0.5">
-                  LOCAL TIME
+                <span className="text-xl sm:text-2xl font-black text-white tracking-tight leading-none">
+                  {formatTime(time)}
                 </span>
               </div>
             )}
