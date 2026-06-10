@@ -160,73 +160,17 @@ export default function App() {
         <motion.div
           key="loader"
           initial={{ opacity: 1 }}
-          exit={{ opacity: 0, y: -20 }}
-          transition={{ duration: 0.6, ease: 'easeInOut' }}
-          className="fixed inset-0 z-50 bg-[#0A0E17] flex flex-col items-center justify-center gap-6 overflow-hidden"
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.4 }}
+          className="fixed inset-0 z-50 bg-[#0A0E17] flex flex-col items-center justify-center gap-4"
         >
-          {/* Ambient Background Glows */}
-          <div className="absolute top-[30%] left-[20%] w-[350px] h-[350px] rounded-full bg-[#00E5FF]/5 filter blur-[100px] pointer-events-none" />
-          <div className="absolute bottom-[30%] right-[20%] w-[350px] h-[350px] rounded-full bg-[#7CFF4F]/4 filter blur-[100px] pointer-events-none" />
-
-          {/* Trophy Icon Container with Rotating Glow */}
-          <div className="relative flex items-center justify-center w-28 h-28 sm:w-32 sm:h-32">
-            {/* Spinning Neon Rings */}
-            <motion.div
-              animate={{ rotate: 360 }}
-              transition={{ repeat: Infinity, duration: 3, ease: 'linear' }}
-              className="absolute inset-0 rounded-full border border-dashed border-[#7cff4f]/30"
-            />
-            <motion.div
-              animate={{ rotate: -360 }}
-              transition={{ repeat: Infinity, duration: 4, ease: 'linear' }}
-              className="absolute inset-2 rounded-full border border-dashed border-[#00e5ff]/20"
-            />
-            <motion.div
-              animate={{ scale: [0.95, 1.05, 0.95] }}
-              transition={{ repeat: Infinity, duration: 2, ease: 'easeInOut' }}
-              className="absolute inset-4 rounded-full bg-gradient-to-br from-[#7cff4f]/10 to-[#00e5ff]/10 blur-md"
-            />
-
-            {/* Glowing Trophy */}
-            <motion.div
-              initial={{ scale: 0.5, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ delay: 0.2, type: 'spring', stiffness: 150 }}
-              className="relative z-10 text-white drop-shadow-[0_0_20px_rgba(124,255,79,0.3)]"
-            >
-              <Trophy size={44} className="text-[#7cff4f]" />
-            </motion.div>
-          </div>
-
-          {/* Text & Progress */}
-          <div className="flex flex-col items-center text-center px-4 gap-3 z-10">
-            <motion.h2
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4 }}
-              className="text-lg sm:text-xl font-black tracking-[0.25em] text-white font-['Outfit'] uppercase"
-            >
-              FIFA World Cup 2026
-            </motion.h2>
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 0.6 }}
-              transition={{ delay: 0.6 }}
-              className="text-[10px] sm:text-xs font-semibold tracking-[0.15em] text-gray-400 font-['Inter'] uppercase"
-            >
-              Initializing Arena...
-            </motion.p>
-
-            {/* Premium Loader Line */}
-            <div className="w-40 sm:w-48 h-[2px] bg-white/[0.06] rounded-full overflow-hidden mt-2 relative">
-              <motion.div
-                initial={{ left: '-100%' }}
-                animate={{ left: '100%' }}
-                transition={{ repeat: Infinity, duration: 1.8, ease: 'easeInOut' }}
-                className="absolute top-0 bottom-0 w-24 bg-gradient-to-r from-transparent via-[#7cff4f] to-transparent"
-              />
-            </div>
-          </div>
+          {/* Load circle turning */}
+          <div className="w-10 h-10 rounded-full border-4 border-white/10 border-t-[#7cff4f] animate-spin" />
+          
+          {/* Loading text */}
+          <span className="text-xs sm:text-sm font-semibold tracking-[0.18em] text-gray-400 font-['Inter'] uppercase mt-2">
+            Loading tournament data...
+          </span>
         </motion.div>
       ) : (
         <motion.div
