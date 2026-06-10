@@ -4,7 +4,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Trophy } from 'lucide-react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import LoginModal from './components/LoginModal';
 import Home from './pages/Home';
 import Fixtures from './pages/Fixtures';
 import Favorites from './pages/Favorites';
@@ -16,7 +15,6 @@ export default function App() {
   const location = useLocation();
   const [user, setUser] = useState(null);
   const [favorites, setFavorites] = useState([]);
-  const [isLoginOpen, setIsLoginOpen] = useState(false);
   const [flagsLoaded, setFlagsLoaded] = useState(false);
   const [loading, setLoading] = useState(true);
   const navbarRef = useRef(null);
@@ -184,7 +182,7 @@ export default function App() {
           <Navbar
             ref={navbarRef}
             user={user}
-            onLoginClick={() => setIsLoginOpen(true)}
+            onLoginClick={() => {}}
             onLogout={handleLogout}
           />
 
@@ -193,7 +191,7 @@ export default function App() {
             <Routes>
               <Route
                 path="/"
-                element={<Home onLoginClick={() => setIsLoginOpen(true)} />}
+                element={<Home onLoginClick={() => {}} />}
               />
               <Route
                 path="/fixtures"
@@ -211,7 +209,7 @@ export default function App() {
                     user={user}
                     favorites={favorites}
                     onToggleFavorite={handleToggleFavorite}
-                    onLoginClick={() => setIsLoginOpen(true)}
+                    onLoginClick={() => {}}
                   />
                 }
               />
@@ -223,13 +221,6 @@ export default function App() {
 
           {/* Footer Shell */}
           <Footer />
-
-          {/* Login Modal */}
-          <LoginModal
-            isOpen={isLoginOpen}
-            onClose={() => setIsLoginOpen(false)}
-            onLoginSuccess={(loggedInUser) => setUser(loggedInUser)}
-          />
         </motion.div>
       )}
     </AnimatePresence>
