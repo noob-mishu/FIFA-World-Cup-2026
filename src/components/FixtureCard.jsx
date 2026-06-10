@@ -18,6 +18,15 @@ const formatTime = (timeStr) => {
   return `${hour}:${min} ${ampm}`;
 };
 
+const formatTeamName = (name) => {
+  if (!name) return '';
+  let formatted = name.trim();
+  formatted = formatted.replace(/\s+runners[- ]up/i, '\nRunners-up');
+  formatted = formatted.replace(/\s+winners/i, '\nWinners');
+  formatted = formatted.replace(/\s+third\s+place/i, '\nThird Place');
+  return formatted;
+};
+
 export default function FixtureCard({ fixture, isFavorite, onToggleFavorite }) {
   const { id, homeTeam, awayTeam, time, group, stage, stadium, city } = fixture;
 
@@ -87,8 +96,8 @@ export default function FixtureCard({ fixture, isFavorite, onToggleFavorite }) {
               )}
             </div>
             <div className="h-8 sm:h-10 flex items-center justify-center w-full">
-              <span className="text-[11px] sm:text-[12px] font-extrabold text-gray-300 group-hover:text-white text-center tracking-wide uppercase transition-colors duration-300 break-words whitespace-normal px-1 leading-tight font-['Outfit']">
-                {homeTeam.name}
+              <span className="text-[11px] sm:text-[12px] font-extrabold text-gray-300 group-hover:text-white text-center tracking-wide uppercase transition-colors duration-300 break-words whitespace-pre-line px-1 leading-tight font-['Outfit']">
+                {formatTeamName(homeTeam.name)}
               </span>
             </div>
           </div>
@@ -133,8 +142,8 @@ export default function FixtureCard({ fixture, isFavorite, onToggleFavorite }) {
               )}
             </div>
             <div className="h-8 sm:h-10 flex items-center justify-center w-full">
-              <span className="text-[11px] sm:text-[12px] font-extrabold text-gray-300 group-hover:text-white text-center tracking-wide uppercase transition-colors duration-300 break-words whitespace-normal px-1 leading-tight font-['Outfit']">
-                {awayTeam.name}
+              <span className="text-[11px] sm:text-[12px] font-extrabold text-gray-300 group-hover:text-white text-center tracking-wide uppercase transition-colors duration-300 break-words whitespace-pre-line px-1 leading-tight font-['Outfit']">
+                {formatTeamName(awayTeam.name)}
               </span>
             </div>
           </div>
