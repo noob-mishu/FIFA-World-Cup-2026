@@ -99,22 +99,14 @@ export default function FixtureCard({ fixture, isFavorite, onToggleFavorite }) {
             <span className="text-xl sm:text-2xl font-black text-transparent bg-clip-text bg-gradient-to-b from-white to-white/30 tracking-wider select-none leading-none">
               VS
             </span>
-            {group === 'Final' ? (
-              <div className="flex flex-col items-center gap-1">
-                <span className="text-[10px] font-extrabold text-gray-400 tracking-wide uppercase bg-white/[0.02] border border-white/[0.04] px-2 py-0.5 rounded">
-                  TBD
-                </span>
-              </div>
-            ) : (
-              <div className="flex flex-col items-center gap-1">
-                <span className="text-[10px] sm:text-[11px] font-bold tracking-wider text-gray-500 uppercase whitespace-nowrap">
-                  Local Time (BD)
-                </span>
-                <span className="text-xl sm:text-2xl font-black text-white tracking-tight leading-none">
-                  {formatTime(time)}
-                </span>
-              </div>
-            )}
+            <div className="flex flex-col items-center gap-1">
+              <span className="text-[10px] sm:text-[11px] font-bold tracking-wider text-gray-500 uppercase whitespace-nowrap">
+                Local Time (BD)
+              </span>
+              <span className="text-xl sm:text-2xl font-black text-white tracking-tight leading-none">
+                {formatTime(time)}
+              </span>
+            </div>
           </div>
 
           {/* Right Divider */}
