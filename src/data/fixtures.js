@@ -1938,39 +1938,17 @@ const fixtures = [
   {
     "id": 89,
     "homeTeam": {
-      "name": "2A/2B",
+      "name": "Winner match 74",
       "code": "TBD",
       "flag": "🏳️"
     },
     "awayTeam": {
-      "name": "1F/2C",
+      "name": "Winner match 77",
       "code": "TBD",
       "flag": "🏳️"
     },
     "date": "July 4, 2026",
     "time": "11:00 PM",
-    "stadium": "NRG Stadium",
-    "city": "Houston, USA",
-    "group": "Final",
-    "stage": "Round of 16",
-    "score": null,
-    "isLive": false,
-    "minute": null
-  },
-  {
-    "id": 90,
-    "homeTeam": {
-      "name": "1E/3ABCDF",
-      "code": "TBD",
-      "flag": "🏳️"
-    },
-    "awayTeam": {
-      "name": "1I/33CDFGH",
-      "code": "TBD",
-      "flag": "🏳️"
-    },
-    "date": "July 5, 2026",
-    "time": "3:00 AM",
     "stadium": "Lincoln Financial Field",
     "city": "Philadelphia, USA",
     "group": "Final",
@@ -1980,18 +1958,40 @@ const fixtures = [
     "minute": null
   },
   {
-    "id": 91,
+    "id": 90,
     "homeTeam": {
-      "name": "1C/2F",
+      "name": "Winner match 73",
       "code": "TBD",
       "flag": "🏳️"
     },
     "awayTeam": {
-      "name": "2E/2I",
+      "name": "Winner match 75",
       "code": "TBD",
       "flag": "🏳️"
     },
-    "date": "July 6, 2026",
+    "date": "July 4, 2026",
+    "time": "3:00 AM",
+    "stadium": "NRG Stadium",
+    "city": "Houston, USA",
+    "group": "Final",
+    "stage": "Round of 16",
+    "score": null,
+    "isLive": false,
+    "minute": null
+  },
+  {
+    "id": 91,
+    "homeTeam": {
+      "name": "Winner match 76",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "awayTeam": {
+      "name": "Winner match 78",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "date": "July 5, 2026",
     "time": "2:00 AM",
     "stadium": "MetLife Stadium",
     "city": "East Rutherford, USA",
@@ -2004,16 +2004,16 @@ const fixtures = [
   {
     "id": 92,
     "homeTeam": {
-      "name": "1A/3CEFHI",
+      "name": "Winner match 79",
       "code": "TBD",
       "flag": "🏳️"
     },
     "awayTeam": {
-      "name": "1L/3EHIJK",
+      "name": "Winner match 80",
       "code": "TBD",
       "flag": "🏳️"
     },
-    "date": "July 6, 2026",
+    "date": "July 5, 2026",
     "time": "6:00 AM",
     "stadium": "Estadio Azteca",
     "city": "Mexico City, Mexico",
@@ -2026,16 +2026,16 @@ const fixtures = [
   {
     "id": 93,
     "homeTeam": {
-      "name": "2K/2L",
+      "name": "Winner match 83",
       "code": "TBD",
       "flag": "🏳️"
     },
     "awayTeam": {
-      "name": "1H/2J",
+      "name": "Winner match 84",
       "code": "TBD",
       "flag": "🏳️"
     },
-    "date": "July 7, 2026",
+    "date": "July 6, 2026",
     "time": "1:00 AM",
     "stadium": "AT&T Stadium",
     "city": "Dallas, USA",
@@ -2048,16 +2048,16 @@ const fixtures = [
   {
     "id": 94,
     "homeTeam": {
-      "name": "1D/3BEFIJ",
+      "name": "Winner match 81",
       "code": "TBD",
       "flag": "🏳️"
     },
     "awayTeam": {
-      "name": "1G/3AEHIJ",
+      "name": "Winner match 82",
       "code": "TBD",
       "flag": "🏳️"
     },
-    "date": "July 7, 2026",
+    "date": "July 6, 2026",
     "time": "6:00 AM",
     "stadium": "Lumen Field",
     "city": "Seattle, USA",
@@ -2070,12 +2070,12 @@ const fixtures = [
   {
     "id": 95,
     "homeTeam": {
-      "name": "1J/2H",
+      "name": "Winner match 86",
       "code": "TBD",
       "flag": "🏳️"
     },
     "awayTeam": {
-      "name": "2D/2G",
+      "name": "Winner match 88",
       "code": "TBD",
       "flag": "🏳️"
     },
@@ -2092,16 +2092,16 @@ const fixtures = [
   {
     "id": 96,
     "homeTeam": {
-      "name": "1B/3EFGIJ",
+      "name": "Winner match 85",
       "code": "TBD",
       "flag": "🏳️"
     },
     "awayTeam": {
-      "name": "1K/3DEIJL",
+      "name": "Winner match 87",
       "code": "TBD",
       "flag": "🏳️"
     },
-    "date": "July 8, 2026",
+    "date": "July 7, 2026",
     "time": "2:00 AM",
     "stadium": "BC Place",
     "city": "Vancouver, Canada",
