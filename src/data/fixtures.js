@@ -12,7 +12,7 @@ const fixtures = [
       "flag": "🇿🇦"
     },
     "date": "June 12, 2026",
-    "time": "1:00 am",
+    "time": "1:00 AM",
     "stadium": "Estadio Azteca",
     "city": "Mexico City, Mexico",
     "group": "A",
@@ -34,7 +34,7 @@ const fixtures = [
       "flag": "🇨🇿"
     },
     "date": "June 12, 2026",
-    "time": "8:00 am",
+    "time": "8:00 AM",
     "stadium": "Estadio Guadalajara",
     "city": "Guadalajara, Mexico",
     "group": "A",
@@ -56,7 +56,7 @@ const fixtures = [
       "flag": "🇧🇦"
     },
     "date": "June 13, 2026",
-    "time": "1:00 am",
+    "time": "1:00 AM",
     "stadium": "BMO Field",
     "city": "Toronto, Canada",
     "group": "B",
@@ -78,7 +78,7 @@ const fixtures = [
       "flag": "🇵🇾"
     },
     "date": "June 13, 2026",
-    "time": "7:00 am",
+    "time": "7:00 AM",
     "stadium": "SoFi Stadium",
     "city": "Los Angeles, USA",
     "group": "D",
@@ -100,7 +100,7 @@ const fixtures = [
       "flag": "🇨🇭"
     },
     "date": "June 14, 2026",
-    "time": "1:00 am",
+    "time": "1:00 AM",
     "stadium": "Levi's Stadium",
     "city": "San Francisco, USA",
     "group": "B",
@@ -122,7 +122,7 @@ const fixtures = [
       "flag": "🇲🇦"
     },
     "date": "June 14, 2026",
-    "time": "4:00 am",
+    "time": "4:00 AM",
     "stadium": "MetLife Stadium",
     "city": "East Rutherford, USA",
     "group": "C",
@@ -144,7 +144,7 @@ const fixtures = [
       "flag": "🏴󠁧🏴󠁢🏴󠁳🏴󠁣🏴󠁴🏴󠁿"
     },
     "date": "June 14, 2026",
-    "time": "7:00 am",
+    "time": "7:00 AM",
     "stadium": "Gillette Stadium",
     "city": "Boston, USA",
     "group": "C",
@@ -166,7 +166,7 @@ const fixtures = [
       "flag": "🇹🇷"
     },
     "date": "June 14, 2026",
-    "time": "10:00 am",
+    "time": "10:00 AM",
     "stadium": "BC Place",
     "city": "Vancouver, Canada",
     "group": "D",
@@ -188,7 +188,7 @@ const fixtures = [
       "flag": "🇨🇼"
     },
     "date": "June 14, 2026",
-    "time": "11:00 pm",
+    "time": "11:00 PM",
     "stadium": "NRG Stadium",
     "city": "Houston, USA",
     "group": "E",
@@ -210,7 +210,7 @@ const fixtures = [
       "flag": "🇯🇵"
     },
     "date": "June 15, 2026",
-    "time": "2:00 am",
+    "time": "2:00 AM",
     "stadium": "AT&T Stadium",
     "city": "Dallas, USA",
     "group": "F",
@@ -232,7 +232,7 @@ const fixtures = [
       "flag": "🇪🇨"
     },
     "date": "June 15, 2026",
-    "time": "5:00 am",
+    "time": "5:00 AM",
     "stadium": "Lincoln Financial Field",
     "city": "Philadelphia, USA",
     "group": "E",
@@ -254,7 +254,7 @@ const fixtures = [
       "flag": "🇹🇳"
     },
     "date": "June 15, 2026",
-    "time": "8:00 am",
+    "time": "8:00 AM",
     "stadium": "Estadio Monterrey",
     "city": "Monterrey, Mexico",
     "group": "F",
@@ -276,7 +276,7 @@ const fixtures = [
       "flag": "🇨🇻"
     },
     "date": "June 15, 2026",
-    "time": "10:00 pm",
+    "time": "10:00 PM",
     "stadium": "Mercedes-Benz Stadium",
     "city": "Atlanta, USA",
     "group": "H",
@@ -298,7 +298,7 @@ const fixtures = [
       "flag": "🇪🇬"
     },
     "date": "June 16, 2026",
-    "time": "1:00 am",
+    "time": "1:00 AM",
     "stadium": "Lumen Field",
     "city": "Seattle, USA",
     "group": "G",
@@ -320,7 +320,7 @@ const fixtures = [
       "flag": "🇺🇾"
     },
     "date": "June 16, 2026",
-    "time": "4:00 am",
+    "time": "4:00 AM",
     "stadium": "Hard Rock Stadium",
     "city": "Miami, USA",
     "group": "H",
@@ -342,7 +342,7 @@ const fixtures = [
       "flag": "🇳🇿"
     },
     "date": "June 16, 2026",
-    "time": "7:00 am",
+    "time": "7:00 AM",
     "stadium": "SoFi Stadium",
     "city": "Los Angeles, USA",
     "group": "G",
@@ -364,7 +364,7 @@ const fixtures = [
       "flag": "🇸🇳"
     },
     "date": "June 17, 2026",
-    "time": "1:00 am",
+    "time": "1:00 AM",
     "stadium": "MetLife Stadium",
     "city": "East Rutherford, USA",
     "group": "I",
@@ -386,7 +386,7 @@ const fixtures = [
       "flag": "🇳🇴"
     },
     "date": "June 17, 2026",
-    "time": "4:00 am",
+    "time": "4:00 AM",
     "stadium": "Gillette Stadium",
     "city": "Boston, USA",
     "group": "I",
@@ -408,7 +408,7 @@ const fixtures = [
       "flag": "🇩🇿"
     },
     "date": "June 17, 2026",
-    "time": "7:00 am",
+    "time": "7:00 AM",
     "stadium": "GEHA Field at Arrowhead Stadium",
     "city": "Kansas City, USA",
     "group": "J",
@@ -430,7 +430,7 @@ const fixtures = [
       "flag": "🇯🇴"
     },
     "date": "June 17, 2026",
-    "time": "10:00 am",
+    "time": "10:00 AM",
     "stadium": "Levi's Stadium",
     "city": "San Francisco, USA",
     "group": "J",
@@ -452,7 +452,7 @@ const fixtures = [
       "flag": "🇨🇩"
     },
     "date": "June 17, 2026",
-    "time": "11:00 pm",
+    "time": "11:00 PM",
     "stadium": "NRG Stadium",
     "city": "Houston, USA",
     "group": "K",
@@ -474,7 +474,7 @@ const fixtures = [
       "flag": "🇭🇷"
     },
     "date": "June 18, 2026",
-    "time": "2:00 am",
+    "time": "2:00 AM",
     "stadium": "AT&T Stadium",
     "city": "Dallas, USA",
     "group": "L",
@@ -496,7 +496,7 @@ const fixtures = [
       "flag": "🇵🇦"
     },
     "date": "June 18, 2026",
-    "time": "5:00 am",
+    "time": "5:00 AM",
     "stadium": "BMO Field",
     "city": "Toronto, Canada",
     "group": "L",
@@ -518,7 +518,7 @@ const fixtures = [
       "flag": "🇨🇴"
     },
     "date": "June 18, 2026",
-    "time": "8:00 am",
+    "time": "8:00 AM",
     "stadium": "Estadio Azteca",
     "city": "Mexico City, Mexico",
     "group": "K",
@@ -540,7 +540,7 @@ const fixtures = [
       "flag": "🇿🇦"
     },
     "date": "June 18, 2026",
-    "time": "10:00 pm",
+    "time": "10:00 PM",
     "stadium": "Mercedes-Benz Stadium",
     "city": "Atlanta, USA",
     "group": "A",
@@ -562,7 +562,7 @@ const fixtures = [
       "flag": "🇧🇦"
     },
     "date": "June 19, 2026",
-    "time": "1:00 am",
+    "time": "1:00 AM",
     "stadium": "SoFi Stadium",
     "city": "Los Angeles, USA",
     "group": "B",
@@ -584,7 +584,7 @@ const fixtures = [
       "flag": "🇶🇦"
     },
     "date": "June 19, 2026",
-    "time": "4:00 am",
+    "time": "4:00 AM",
     "stadium": "BC Place",
     "city": "Vancouver, Canada",
     "group": "B",
@@ -606,7 +606,7 @@ const fixtures = [
       "flag": "🇰🇷"
     },
     "date": "June 19, 2026",
-    "time": "7:00 am",
+    "time": "7:00 AM",
     "stadium": "Estadio Guadalajara",
     "city": "Guadalajara, Mexico",
     "group": "A",
@@ -628,7 +628,7 @@ const fixtures = [
       "flag": "🇦🇺"
     },
     "date": "June 20, 2026",
-    "time": "1:00 am",
+    "time": "1:00 AM",
     "stadium": "Lumen Field",
     "city": "Seattle, USA",
     "group": "D",
@@ -650,7 +650,7 @@ const fixtures = [
       "flag": "🇲🇦"
     },
     "date": "June 20, 2026",
-    "time": "4:00 am",
+    "time": "4:00 AM",
     "stadium": "Gillette Stadium",
     "city": "Boston, USA",
     "group": "C",
@@ -672,7 +672,7 @@ const fixtures = [
       "flag": "🇭🇹"
     },
     "date": "June 20, 2026",
-    "time": "6:30 am",
+    "time": "6:30 AM",
     "stadium": "Lincoln Financial Field",
     "city": "Philadelphia, USA",
     "group": "C",
@@ -694,7 +694,7 @@ const fixtures = [
       "flag": "🇵🇾"
     },
     "date": "June 20, 2026",
-    "time": "9:00 am",
+    "time": "9:00 AM",
     "stadium": "Levi's Stadium",
     "city": "San Francisco, USA",
     "group": "D",
@@ -716,7 +716,7 @@ const fixtures = [
       "flag": "🇸🇪"
     },
     "date": "June 20, 2026",
-    "time": "11:00 pm",
+    "time": "11:00 PM",
     "stadium": "NRG Stadium",
     "city": "Houston, USA",
     "group": "F",
@@ -738,7 +738,7 @@ const fixtures = [
       "flag": "🇨🇮"
     },
     "date": "June 21, 2026",
-    "time": "2:00 am",
+    "time": "2:00 AM",
     "stadium": "BMO Field",
     "city": "Toronto, Canada",
     "group": "E",
@@ -760,7 +760,7 @@ const fixtures = [
       "flag": "🇨🇼"
     },
     "date": "June 21, 2026",
-    "time": "6:00 am",
+    "time": "6:00 AM",
     "stadium": "GEHA Field at Arrowhead Stadium",
     "city": "Kansas City, USA",
     "group": "E",
@@ -782,7 +782,7 @@ const fixtures = [
       "flag": "🇯🇵"
     },
     "date": "June 21, 2026",
-    "time": "10:00 am",
+    "time": "10:00 AM",
     "stadium": "Estadio Monterrey",
     "city": "Monterrey, Mexico",
     "group": "F",
@@ -804,7 +804,7 @@ const fixtures = [
       "flag": "🇸🇦"
     },
     "date": "June 21, 2026",
-    "time": "10:00 pm",
+    "time": "10:00 PM",
     "stadium": "Mercedes-Benz Stadium",
     "city": "Atlanta, USA",
     "group": "H",
@@ -826,7 +826,7 @@ const fixtures = [
       "flag": "🇮🇷"
     },
     "date": "June 22, 2026",
-    "time": "1:00 am",
+    "time": "1:00 AM",
     "stadium": "SoFi Stadium",
     "city": "Los Angeles, USA",
     "group": "G",
@@ -848,7 +848,7 @@ const fixtures = [
       "flag": "🇨🇻"
     },
     "date": "June 22, 2026",
-    "time": "4:00 am",
+    "time": "4:00 AM",
     "stadium": "Hard Rock Stadium",
     "city": "Miami, USA",
     "group": "H",
@@ -870,7 +870,7 @@ const fixtures = [
       "flag": "🇪🇬"
     },
     "date": "June 22, 2026",
-    "time": "7:00 am",
+    "time": "7:00 AM",
     "stadium": "BC Place",
     "city": "Vancouver, Canada",
     "group": "G",
@@ -892,7 +892,7 @@ const fixtures = [
       "flag": "🇦🇹"
     },
     "date": "June 22, 2026",
-    "time": "11:00 pm",
+    "time": "11:00 PM",
     "stadium": "AT&T Stadium",
     "city": "Dallas, USA",
     "group": "J",
@@ -914,7 +914,7 @@ const fixtures = [
       "flag": "🇮🇶"
     },
     "date": "June 23, 2026",
-    "time": "3:00 am",
+    "time": "3:00 AM",
     "stadium": "Lincoln Financial Field",
     "city": "Philadelphia, USA",
     "group": "I",
@@ -936,7 +936,7 @@ const fixtures = [
       "flag": "🇸🇳"
     },
     "date": "June 23, 2026",
-    "time": "6:00 am",
+    "time": "6:00 AM",
     "stadium": "MetLife Stadium",
     "city": "East Rutherford, USA",
     "group": "I",
@@ -958,7 +958,7 @@ const fixtures = [
       "flag": "🇩🇿"
     },
     "date": "June 23, 2026",
-    "time": "9:00 am",
+    "time": "9:00 AM",
     "stadium": "Levi's Stadium",
     "city": "San Francisco, USA",
     "group": "J",
@@ -980,7 +980,7 @@ const fixtures = [
       "flag": "🇺🇿"
     },
     "date": "June 23, 2026",
-    "time": "11:00 pm",
+    "time": "11:00 PM",
     "stadium": "NRG Stadium",
     "city": "Houston, USA",
     "group": "K",
@@ -1002,7 +1002,7 @@ const fixtures = [
       "flag": "🇬🇭"
     },
     "date": "June 24, 2026",
-    "time": "2:00 am",
+    "time": "2:00 AM",
     "stadium": "Gillette Stadium",
     "city": "Boston, USA",
     "group": "L",
@@ -1024,7 +1024,7 @@ const fixtures = [
       "flag": "🇭🇷"
     },
     "date": "June 24, 2026",
-    "time": "5:00 am",
+    "time": "5:00 AM",
     "stadium": "BMO Field",
     "city": "Toronto, Canada",
     "group": "L",
@@ -1046,7 +1046,7 @@ const fixtures = [
       "flag": "🇨🇩"
     },
     "date": "June 24, 2026",
-    "time": "8:00 am",
+    "time": "8:00 AM",
     "stadium": "Estadio Guadalajara",
     "city": "Guadalajara, Mexico",
     "group": "K",
@@ -1068,7 +1068,7 @@ const fixtures = [
       "flag": "🇨🇦"
     },
     "date": "June 25, 2026",
-    "time": "1:00 am",
+    "time": "1:00 AM",
     "stadium": "BC Place",
     "city": "Vancouver, Canada",
     "group": "B",
@@ -1090,7 +1090,7 @@ const fixtures = [
       "flag": "🇶🇦"
     },
     "date": "June 25, 2026",
-    "time": "1:00 am",
+    "time": "1:00 AM",
     "stadium": "Lumen Field",
     "city": "Seattle, USA",
     "group": "B",
@@ -1112,7 +1112,7 @@ const fixtures = [
       "flag": "🇭🇹"
     },
     "date": "June 25, 2026",
-    "time": "4:00 am",
+    "time": "4:00 AM",
     "stadium": "Mercedes-Benz Stadium",
     "city": "Atlanta, USA",
     "group": "C",
@@ -1134,7 +1134,7 @@ const fixtures = [
       "flag": "🇧🇷"
     },
     "date": "June 25, 2026",
-    "time": "4:00 am",
+    "time": "4:00 AM",
     "stadium": "Hard Rock Stadium",
     "city": "Miami, USA",
     "group": "C",
@@ -1156,7 +1156,7 @@ const fixtures = [
       "flag": "🇰🇷"
     },
     "date": "June 25, 2026",
-    "time": "7:00 am",
+    "time": "7:00 AM",
     "stadium": "Estadio Monterrey",
     "city": "Monterrey, Mexico",
     "group": "A",
@@ -1178,7 +1178,7 @@ const fixtures = [
       "flag": "🇲🇽"
     },
     "date": "June 25, 2026",
-    "time": "7:00 am",
+    "time": "7:00 AM",
     "stadium": "Estadio Azteca",
     "city": "Mexico City, Mexico",
     "group": "A",
@@ -1200,7 +1200,7 @@ const fixtures = [
       "flag": "🇨🇮"
     },
     "date": "June 26, 2026",
-    "time": "2:00 am",
+    "time": "2:00 AM",
     "stadium": "Lincoln Financial Field",
     "city": "Philadelphia, USA",
     "group": "E",
@@ -1222,7 +1222,7 @@ const fixtures = [
       "flag": "🇩🇪"
     },
     "date": "June 26, 2026",
-    "time": "2:00 am",
+    "time": "2:00 AM",
     "stadium": "MetLife Stadium",
     "city": "East Rutherford, USA",
     "group": "E",
@@ -1244,7 +1244,7 @@ const fixtures = [
       "flag": "🇳🇱"
     },
     "date": "June 26, 2026",
-    "time": "5:00 am",
+    "time": "5:00 AM",
     "stadium": "GEHA Field at Arrowhead Stadium",
     "city": "Kansas City, USA",
     "group": "F",
@@ -1266,7 +1266,7 @@ const fixtures = [
       "flag": "🇸🇪"
     },
     "date": "June 26, 2026",
-    "time": "5:00 am",
+    "time": "5:00 AM",
     "stadium": "AT&T Stadium",
     "city": "Dallas, USA",
     "group": "F",
@@ -1288,7 +1288,7 @@ const fixtures = [
       "flag": "🇺🇸"
     },
     "date": "June 26, 2026",
-    "time": "8:00 am",
+    "time": "8:00 AM",
     "stadium": "SoFi Stadium",
     "city": "Los Angeles, USA",
     "group": "D",
@@ -1310,7 +1310,7 @@ const fixtures = [
       "flag": "🇦🇺"
     },
     "date": "June 26, 2026",
-    "time": "8:00 am",
+    "time": "8:00 AM",
     "stadium": "Levi's Stadium",
     "city": "San Francisco, USA",
     "group": "D",
@@ -1332,7 +1332,7 @@ const fixtures = [
       "flag": "🇫🇷"
     },
     "date": "June 27, 2026",
-    "time": "1:00 am",
+    "time": "1:00 AM",
     "stadium": "Gillette Stadium",
     "city": "Boston, USA",
     "group": "I",
@@ -1354,7 +1354,7 @@ const fixtures = [
       "flag": "🇮🇶"
     },
     "date": "June 27, 2026",
-    "time": "1:00 am",
+    "time": "1:00 AM",
     "stadium": "BMO Field",
     "city": "Toronto, Canada",
     "group": "I",
@@ -1376,7 +1376,7 @@ const fixtures = [
       "flag": "🇸🇦"
     },
     "date": "June 27, 2026",
-    "time": "6:00 am",
+    "time": "6:00 AM",
     "stadium": "NRG Stadium",
     "city": "Houston, USA",
     "group": "H",
@@ -1398,7 +1398,7 @@ const fixtures = [
       "flag": "🇪🇸"
     },
     "date": "June 27, 2026",
-    "time": "6:00 am",
+    "time": "6:00 AM",
     "stadium": "Estadio Guadalajara",
     "city": "Guadalajara, Mexico",
     "group": "H",
@@ -1420,7 +1420,7 @@ const fixtures = [
       "flag": "🇧🇪"
     },
     "date": "June 27, 2026",
-    "time": "9:00 am",
+    "time": "9:00 AM",
     "stadium": "BC Place",
     "city": "Vancouver, Canada",
     "group": "G",
@@ -1442,7 +1442,7 @@ const fixtures = [
       "flag": "🇮🇷"
     },
     "date": "June 27, 2026",
-    "time": "9:00 am",
+    "time": "9:00 AM",
     "stadium": "Lumen Field",
     "city": "Seattle, USA",
     "group": "G",
@@ -1464,7 +1464,7 @@ const fixtures = [
       "flag": "🏴󠁧🏴󠁢🏴󠁥🏴󠁮🏴󠁧🏴󠁿"
     },
     "date": "June 28, 2026",
-    "time": "3:00 am",
+    "time": "3:00 AM",
     "stadium": "MetLife Stadium",
     "city": "East Rutherford, USA",
     "group": "L",
@@ -1486,7 +1486,7 @@ const fixtures = [
       "flag": "🇬🇭"
     },
     "date": "June 28, 2026",
-    "time": "3:00 am",
+    "time": "3:00 AM",
     "stadium": "Lincoln Financial Field",
     "city": "Philadelphia, USA",
     "group": "L",
@@ -1508,7 +1508,7 @@ const fixtures = [
       "flag": "🇵🇹"
     },
     "date": "June 28, 2026",
-    "time": "5:30 am",
+    "time": "5:30 AM",
     "stadium": "Hard Rock Stadium",
     "city": "Miami, USA",
     "group": "K",
@@ -1530,7 +1530,7 @@ const fixtures = [
       "flag": "🇺🇿"
     },
     "date": "June 28, 2026",
-    "time": "5:30 am",
+    "time": "5:30 AM",
     "stadium": "Mercedes-Benz Stadium",
     "city": "Atlanta, USA",
     "group": "K",
@@ -1552,7 +1552,7 @@ const fixtures = [
       "flag": "🇦🇹"
     },
     "date": "June 28, 2026",
-    "time": "8:00 am",
+    "time": "8:00 AM",
     "stadium": "GEHA Field at Arrowhead Stadium",
     "city": "Kansas City, USA",
     "group": "J",
@@ -1574,7 +1574,7 @@ const fixtures = [
       "flag": "🇦🇷"
     },
     "date": "June 28, 2026",
-    "time": "8:00 am",
+    "time": "8:00 AM",
     "stadium": "AT&T Stadium",
     "city": "Dallas, USA",
     "group": "J",
@@ -1596,7 +1596,7 @@ const fixtures = [
       "flag": "🏳️"
     },
     "date": "June 29, 2026",
-    "time": "1:00 am",
+    "time": "1:00 AM",
     "stadium": "SoFi Stadium",
     "city": "Los Angeles, USA",
     "group": "Final",
@@ -1618,7 +1618,7 @@ const fixtures = [
       "flag": "🏳️"
     },
     "date": "June 29, 2026",
-    "time": "11:00 pm",
+    "time": "11:00 PM",
     "stadium": "NRG Stadium",
     "city": "Houston, USA",
     "group": "Final",
@@ -1640,7 +1640,7 @@ const fixtures = [
       "flag": "🏳️"
     },
     "date": "June 30, 2026",
-    "time": "2:30 am",
+    "time": "2:30 AM",
     "stadium": "Gillette Stadium",
     "city": "Boston, USA",
     "group": "Final",
@@ -1662,7 +1662,7 @@ const fixtures = [
       "flag": "🏳️"
     },
     "date": "June 30, 2026",
-    "time": "7:00 am",
+    "time": "7:00 AM",
     "stadium": "Estadio Monterrey",
     "city": "Monterrey, Mexico",
     "group": "Final",
@@ -1684,7 +1684,7 @@ const fixtures = [
       "flag": "🏳️"
     },
     "date": "June 30, 2026",
-    "time": "11:00 pm",
+    "time": "11:00 PM",
     "stadium": "AT&T Stadium",
     "city": "Dallas, USA",
     "group": "Final",
@@ -1706,7 +1706,7 @@ const fixtures = [
       "flag": "🏳️"
     },
     "date": "July 1, 2026",
-    "time": "3:00 am",
+    "time": "3:00 AM",
     "stadium": "MetLife Stadium",
     "city": "East Rutherford, USA",
     "group": "Final",
@@ -1728,7 +1728,7 @@ const fixtures = [
       "flag": "🏳️"
     },
     "date": "July 1, 2026",
-    "time": "7:00 am",
+    "time": "7:00 AM",
     "stadium": "Estadio Azteca",
     "city": "Mexico City, Mexico",
     "group": "Final",
@@ -1750,7 +1750,7 @@ const fixtures = [
       "flag": "🏳️"
     },
     "date": "July 1, 2026",
-    "time": "10:00 pm",
+    "time": "10:00 PM",
     "stadium": "Mercedes-Benz Stadium",
     "city": "Atlanta, USA",
     "group": "Final",
@@ -1772,7 +1772,7 @@ const fixtures = [
       "flag": "🏳️"
     },
     "date": "July 2, 2026",
-    "time": "2:00 am",
+    "time": "2:00 AM",
     "stadium": "Lumen Field",
     "city": "Seattle, USA",
     "group": "Final",
@@ -1794,7 +1794,7 @@ const fixtures = [
       "flag": "🏳️"
     },
     "date": "July 2, 2026",
-    "time": "6:00 am",
+    "time": "6:00 AM",
     "stadium": "Levi's Stadium",
     "city": "San Francisco, USA",
     "group": "Final",
@@ -1816,7 +1816,7 @@ const fixtures = [
       "flag": "🏳️"
     },
     "date": "July 3, 2026",
-    "time": "1:00 am",
+    "time": "1:00 AM",
     "stadium": "SoFi Stadium",
     "city": "Los Angeles, USA",
     "group": "Final",
@@ -1838,7 +1838,7 @@ const fixtures = [
       "flag": "🏳️"
     },
     "date": "July 3, 2026",
-    "time": "5:00 am",
+    "time": "5:00 AM",
     "stadium": "BMO Field",
     "city": "Toronto, Canada",
     "group": "Final",
@@ -1860,7 +1860,7 @@ const fixtures = [
       "flag": "🏳️"
     },
     "date": "July 3, 2026",
-    "time": "9:00 am",
+    "time": "9:00 AM",
     "stadium": "BC Place",
     "city": "Vancouver, Canada",
     "group": "Final",
@@ -1882,7 +1882,7 @@ const fixtures = [
       "flag": "🏳️"
     },
     "date": "July 4, 2026",
-    "time": "12:00 am",
+    "time": "12:00 AM",
     "stadium": "AT&T Stadium",
     "city": "Dallas, USA",
     "group": "Final",
@@ -1904,7 +1904,7 @@ const fixtures = [
       "flag": "🏳️"
     },
     "date": "July 4, 2026",
-    "time": "4:00 am",
+    "time": "4:00 AM",
     "stadium": "Hard Rock Stadium",
     "city": "Miami, USA",
     "group": "Final",
@@ -1926,7 +1926,7 @@ const fixtures = [
       "flag": "🏳️"
     },
     "date": "July 4, 2026",
-    "time": "7:30 am",
+    "time": "7:30 AM",
     "stadium": "GEHA Field at Arrowhead Stadium",
     "city": "Kansas City, USA",
     "group": "Final",
@@ -1948,7 +1948,7 @@ const fixtures = [
       "flag": "🏳️"
     },
     "date": "July 4, 2026",
-    "time": "11:00 pm",
+    "time": "11:00 PM",
     "stadium": "NRG Stadium",
     "city": "Houston, USA",
     "group": "Final",
@@ -1970,7 +1970,7 @@ const fixtures = [
       "flag": "🏳️"
     },
     "date": "July 5, 2026",
-    "time": "3:00 am",
+    "time": "3:00 AM",
     "stadium": "Lincoln Financial Field",
     "city": "Philadelphia, USA",
     "group": "Final",
@@ -1992,7 +1992,7 @@ const fixtures = [
       "flag": "🏳️"
     },
     "date": "July 6, 2026",
-    "time": "2:00 am",
+    "time": "2:00 AM",
     "stadium": "MetLife Stadium",
     "city": "East Rutherford, USA",
     "group": "Final",
@@ -2014,7 +2014,7 @@ const fixtures = [
       "flag": "🏳️"
     },
     "date": "July 6, 2026",
-    "time": "6:00 am",
+    "time": "6:00 AM",
     "stadium": "Estadio Azteca",
     "city": "Mexico City, Mexico",
     "group": "Final",
@@ -2036,7 +2036,7 @@ const fixtures = [
       "flag": "🏳️"
     },
     "date": "July 7, 2026",
-    "time": "1:00 am",
+    "time": "1:00 AM",
     "stadium": "AT&T Stadium",
     "city": "Dallas, USA",
     "group": "Final",
@@ -2058,7 +2058,7 @@ const fixtures = [
       "flag": "🏳️"
     },
     "date": "July 7, 2026",
-    "time": "6:00 am",
+    "time": "6:00 AM",
     "stadium": "Lumen Field",
     "city": "Seattle, USA",
     "group": "Final",
@@ -2080,7 +2080,7 @@ const fixtures = [
       "flag": "🏳️"
     },
     "date": "July 7, 2026",
-    "time": "10:00 pm",
+    "time": "10:00 PM",
     "stadium": "Mercedes-Benz Stadium",
     "city": "Atlanta, USA",
     "group": "Final",
@@ -2102,7 +2102,7 @@ const fixtures = [
       "flag": "🏳️"
     },
     "date": "July 8, 2026",
-    "time": "2:00 am",
+    "time": "2:00 AM",
     "stadium": "BC Place",
     "city": "Vancouver, Canada",
     "group": "Final",
@@ -2124,7 +2124,7 @@ const fixtures = [
       "flag": "🏳️"
     },
     "date": "July 10, 2026",
-    "time": "2:00 am",
+    "time": "2:00 AM",
     "stadium": "Gillette Stadium",
     "city": "Boston, USA",
     "group": "Final",
@@ -2146,7 +2146,7 @@ const fixtures = [
       "flag": "🏳️"
     },
     "date": "July 11, 2026",
-    "time": "1:00 am",
+    "time": "1:00 AM",
     "stadium": "SoFi Stadium",
     "city": "Los Angeles, USA",
     "group": "Final",
@@ -2168,7 +2168,7 @@ const fixtures = [
       "flag": "🏳️"
     },
     "date": "July 12, 2026",
-    "time": "3:00 am",
+    "time": "3:00 AM",
     "stadium": "Hard Rock Stadium",
     "city": "Miami, USA",
     "group": "Final",
@@ -2190,7 +2190,7 @@ const fixtures = [
       "flag": "🏳️"
     },
     "date": "July 12, 2026",
-    "time": "7:00 am",
+    "time": "7:00 AM",
     "stadium": "GEHA Field at Arrowhead Stadium",
     "city": "Kansas City, USA",
     "group": "Final",
@@ -2212,7 +2212,7 @@ const fixtures = [
       "flag": "🏳️"
     },
     "date": "July 15, 2026",
-    "time": "1:00 am",
+    "time": "1:00 AM",
     "stadium": "AT&T Stadium",
     "city": "Dallas, USA",
     "group": "Final",
@@ -2234,7 +2234,7 @@ const fixtures = [
       "flag": "🏳️"
     },
     "date": "July 16, 2026",
-    "time": "1:00 am",
+    "time": "1:00 AM",
     "stadium": "Mercedes-Benz Stadium",
     "city": "Atlanta, USA",
     "group": "Final",
@@ -2256,7 +2256,7 @@ const fixtures = [
       "flag": "🏳️"
     },
     "date": "July 19, 2026",
-    "time": "3:00 am",
+    "time": "3:00 AM",
     "stadium": "Hard Rock Stadium",
     "city": "Miami, USA",
     "group": "Final",
@@ -2278,7 +2278,7 @@ const fixtures = [
       "flag": "🏳️"
     },
     "date": "July 20, 2026",
-    "time": "1:00 am",
+    "time": "1:00 AM",
     "stadium": "MetLife Stadium",
     "city": "East Rutherford, USA",
     "group": "Final",
