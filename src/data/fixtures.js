@@ -1582,6 +1582,710 @@ const fixtures = [
     "score": null,
     "isLive": false,
     "minute": null
+  },
+  {
+    "id": 73,
+    "homeTeam": {
+      "name": "2A",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "awayTeam": {
+      "name": "2B",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "date": "June 29, 2026",
+    "time": "1:00 am",
+    "stadium": "SoFi Stadium",
+    "city": "Los Angeles, USA",
+    "group": "Final",
+    "stage": "Round of 32",
+    "score": null,
+    "isLive": false,
+    "minute": null
+  },
+  {
+    "id": 74,
+    "homeTeam": {
+      "name": "1C",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "awayTeam": {
+      "name": "2F",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "date": "June 29, 2026",
+    "time": "11:00 pm",
+    "stadium": "NRG Stadium",
+    "city": "Houston, USA",
+    "group": "Final",
+    "stage": "Round of 32",
+    "score": null,
+    "isLive": false,
+    "minute": null
+  },
+  {
+    "id": 75,
+    "homeTeam": {
+      "name": "1E",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "awayTeam": {
+      "name": "3A/B/C/D/F",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "date": "June 30, 2026",
+    "time": "2:30 am",
+    "stadium": "Gillette Stadium",
+    "city": "Boston, USA",
+    "group": "Final",
+    "stage": "Round of 32",
+    "score": null,
+    "isLive": false,
+    "minute": null
+  },
+  {
+    "id": 76,
+    "homeTeam": {
+      "name": "1F",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "awayTeam": {
+      "name": "2C",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "date": "June 30, 2026",
+    "time": "7:00 am",
+    "stadium": "Estadio Monterrey",
+    "city": "Monterrey, Mexico",
+    "group": "Final",
+    "stage": "Round of 32",
+    "score": null,
+    "isLive": false,
+    "minute": null
+  },
+  {
+    "id": 77,
+    "homeTeam": {
+      "name": "2E",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "awayTeam": {
+      "name": "2I",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "date": "June 30, 2026",
+    "time": "11:00 pm",
+    "stadium": "AT&T Stadium",
+    "city": "Dallas, USA",
+    "group": "Final",
+    "stage": "Round of 32",
+    "score": null,
+    "isLive": false,
+    "minute": null
+  },
+  {
+    "id": 78,
+    "homeTeam": {
+      "name": "1I",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "awayTeam": {
+      "name": "3C/D/F/G/H",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "date": "July 1, 2026",
+    "time": "3:00 am",
+    "stadium": "MetLife Stadium",
+    "city": "East Rutherford, USA",
+    "group": "Final",
+    "stage": "Round of 32",
+    "score": null,
+    "isLive": false,
+    "minute": null
+  },
+  {
+    "id": 79,
+    "homeTeam": {
+      "name": "1A",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "awayTeam": {
+      "name": "3C/E/F/H/I",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "date": "July 1, 2026",
+    "time": "7:00 am",
+    "stadium": "Estadio Azteca",
+    "city": "Mexico City, Mexico",
+    "group": "Final",
+    "stage": "Round of 32",
+    "score": null,
+    "isLive": false,
+    "minute": null
+  },
+  {
+    "id": 80,
+    "homeTeam": {
+      "name": "1L",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "awayTeam": {
+      "name": "3E/H/I/J/K",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "date": "July 1, 2026",
+    "time": "10:00 pm",
+    "stadium": "Mercedes-Benz Stadium",
+    "city": "Atlanta, USA",
+    "group": "Final",
+    "stage": "Round of 32",
+    "score": null,
+    "isLive": false,
+    "minute": null
+  },
+  {
+    "id": 81,
+    "homeTeam": {
+      "name": "1G",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "awayTeam": {
+      "name": "3A/E/H/I/J",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "date": "July 2, 2026",
+    "time": "2:00 am",
+    "stadium": "Lumen Field",
+    "city": "Seattle, USA",
+    "group": "Final",
+    "stage": "Round of 32",
+    "score": null,
+    "isLive": false,
+    "minute": null
+  },
+  {
+    "id": 82,
+    "homeTeam": {
+      "name": "1D",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "awayTeam": {
+      "name": "3B/E/F/I/J",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "date": "July 2, 2026",
+    "time": "6:00 am",
+    "stadium": "Levi's Stadium",
+    "city": "San Francisco, USA",
+    "group": "Final",
+    "stage": "Round of 32",
+    "score": null,
+    "isLive": false,
+    "minute": null
+  },
+  {
+    "id": 83,
+    "homeTeam": {
+      "name": "1H",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "awayTeam": {
+      "name": "2J",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "date": "July 3, 2026",
+    "time": "1:00 am",
+    "stadium": "SoFi Stadium",
+    "city": "Los Angeles, USA",
+    "group": "Final",
+    "stage": "Round of 32",
+    "score": null,
+    "isLive": false,
+    "minute": null
+  },
+  {
+    "id": 84,
+    "homeTeam": {
+      "name": "2K",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "awayTeam": {
+      "name": "2L",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "date": "July 3, 2026",
+    "time": "5:00 am",
+    "stadium": "BMO Field",
+    "city": "Toronto, Canada",
+    "group": "Final",
+    "stage": "Round of 32",
+    "score": null,
+    "isLive": false,
+    "minute": null
+  },
+  {
+    "id": 85,
+    "homeTeam": {
+      "name": "1B",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "awayTeam": {
+      "name": "3E/F/G/I/J",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "date": "July 3, 2026",
+    "time": "9:00 am",
+    "stadium": "BC Place",
+    "city": "Vancouver, Canada",
+    "group": "Final",
+    "stage": "Round of 32",
+    "score": null,
+    "isLive": false,
+    "minute": null
+  },
+  {
+    "id": 86,
+    "homeTeam": {
+      "name": "2D",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "awayTeam": {
+      "name": "2G",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "date": "July 4, 2026",
+    "time": "12:00 am",
+    "stadium": "AT&T Stadium",
+    "city": "Dallas, USA",
+    "group": "Final",
+    "stage": "Round of 32",
+    "score": null,
+    "isLive": false,
+    "minute": null
+  },
+  {
+    "id": 87,
+    "homeTeam": {
+      "name": "1J",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "awayTeam": {
+      "name": "2H",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "date": "July 4, 2026",
+    "time": "4:00 am",
+    "stadium": "Hard Rock Stadium",
+    "city": "Miami, USA",
+    "group": "Final",
+    "stage": "Round of 32",
+    "score": null,
+    "isLive": false,
+    "minute": null
+  },
+  {
+    "id": 88,
+    "homeTeam": {
+      "name": "1K",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "awayTeam": {
+      "name": "3D/E/I/J/L",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "date": "July 4, 2026",
+    "time": "7:30 am",
+    "stadium": "GEHA Field at Arrowhead Stadium",
+    "city": "Kansas City, USA",
+    "group": "Final",
+    "stage": "Round of 32",
+    "score": null,
+    "isLive": false,
+    "minute": null
+  },
+  {
+    "id": 89,
+    "homeTeam": {
+      "name": "2A/2B",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "awayTeam": {
+      "name": "1F/2C",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "date": "July 4, 2026",
+    "time": "11:00 pm",
+    "stadium": "NRG Stadium",
+    "city": "Houston, USA",
+    "group": "Final",
+    "stage": "Round of 16",
+    "score": null,
+    "isLive": false,
+    "minute": null
+  },
+  {
+    "id": 90,
+    "homeTeam": {
+      "name": "1E/3ABCDF",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "awayTeam": {
+      "name": "1I/33CDFGH",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "date": "July 5, 2026",
+    "time": "3:00 am",
+    "stadium": "Lincoln Financial Field",
+    "city": "Philadelphia, USA",
+    "group": "Final",
+    "stage": "Round of 16",
+    "score": null,
+    "isLive": false,
+    "minute": null
+  },
+  {
+    "id": 91,
+    "homeTeam": {
+      "name": "1C/2F",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "awayTeam": {
+      "name": "2E/2I",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "date": "July 6, 2026",
+    "time": "2:00 am",
+    "stadium": "MetLife Stadium",
+    "city": "East Rutherford, USA",
+    "group": "Final",
+    "stage": "Round of 16",
+    "score": null,
+    "isLive": false,
+    "minute": null
+  },
+  {
+    "id": 92,
+    "homeTeam": {
+      "name": "1A/3CEFHI",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "awayTeam": {
+      "name": "1L/3EHIJK",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "date": "July 6, 2026",
+    "time": "6:00 am",
+    "stadium": "Estadio Azteca",
+    "city": "Mexico City, Mexico",
+    "group": "Final",
+    "stage": "Round of 16",
+    "score": null,
+    "isLive": false,
+    "minute": null
+  },
+  {
+    "id": 93,
+    "homeTeam": {
+      "name": "2K/2L",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "awayTeam": {
+      "name": "1H/2J",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "date": "July 7, 2026",
+    "time": "1:00 am",
+    "stadium": "AT&T Stadium",
+    "city": "Dallas, USA",
+    "group": "Final",
+    "stage": "Round of 16",
+    "score": null,
+    "isLive": false,
+    "minute": null
+  },
+  {
+    "id": 94,
+    "homeTeam": {
+      "name": "1D/3BEFIJ",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "awayTeam": {
+      "name": "1G/3AEHIJ",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "date": "July 7, 2026",
+    "time": "6:00 am",
+    "stadium": "Lumen Field",
+    "city": "Seattle, USA",
+    "group": "Final",
+    "stage": "Round of 16",
+    "score": null,
+    "isLive": false,
+    "minute": null
+  },
+  {
+    "id": 95,
+    "homeTeam": {
+      "name": "1J/2H",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "awayTeam": {
+      "name": "2D/2G",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "date": "July 7, 2026",
+    "time": "10:00 pm",
+    "stadium": "Mercedes-Benz Stadium",
+    "city": "Atlanta, USA",
+    "group": "Final",
+    "stage": "Round of 16",
+    "score": null,
+    "isLive": false,
+    "minute": null
+  },
+  {
+    "id": 96,
+    "homeTeam": {
+      "name": "1B/3EFGIJ",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "awayTeam": {
+      "name": "1K/3DEIJL",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "date": "July 8, 2026",
+    "time": "2:00 am",
+    "stadium": "BC Place",
+    "city": "Vancouver, Canada",
+    "group": "Final",
+    "stage": "Round of 16",
+    "score": null,
+    "isLive": false,
+    "minute": null
+  },
+  {
+    "id": 97,
+    "homeTeam": {
+      "name": "Winner match 89",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "awayTeam": {
+      "name": "Winner match 90",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "date": "July 10, 2026",
+    "time": "2:00 am",
+    "stadium": "Gillette Stadium",
+    "city": "Boston, USA",
+    "group": "Final",
+    "stage": "Quarter-final",
+    "score": null,
+    "isLive": false,
+    "minute": null
+  },
+  {
+    "id": 98,
+    "homeTeam": {
+      "name": "Winner match 93",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "awayTeam": {
+      "name": "Winner match 94",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "date": "July 11, 2026",
+    "time": "1:00 am",
+    "stadium": "SoFi Stadium",
+    "city": "Los Angeles, USA",
+    "group": "Final",
+    "stage": "Quarter-final",
+    "score": null,
+    "isLive": false,
+    "minute": null
+  },
+  {
+    "id": 99,
+    "homeTeam": {
+      "name": "Winner match 91",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "awayTeam": {
+      "name": "Winner match 92",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "date": "July 12, 2026",
+    "time": "3:00 am",
+    "stadium": "Hard Rock Stadium",
+    "city": "Miami, USA",
+    "group": "Final",
+    "stage": "Quarter-final",
+    "score": null,
+    "isLive": false,
+    "minute": null
+  },
+  {
+    "id": 100,
+    "homeTeam": {
+      "name": "Winner match 95",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "awayTeam": {
+      "name": "Winner match 96",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "date": "July 12, 2026",
+    "time": "7:00 am",
+    "stadium": "GEHA Field at Arrowhead Stadium",
+    "city": "Kansas City, USA",
+    "group": "Final",
+    "stage": "Quarter-final",
+    "score": null,
+    "isLive": false,
+    "minute": null
+  },
+  {
+    "id": 101,
+    "homeTeam": {
+      "name": "Winner match 97",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "awayTeam": {
+      "name": "Winner match 98",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "date": "July 15, 2026",
+    "time": "1:00 am",
+    "stadium": "AT&T Stadium",
+    "city": "Dallas, USA",
+    "group": "Final",
+    "stage": "Semi-final",
+    "score": null,
+    "isLive": false,
+    "minute": null
+  },
+  {
+    "id": 102,
+    "homeTeam": {
+      "name": "Winner match 99",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "awayTeam": {
+      "name": "Winner match 100",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "date": "July 16, 2026",
+    "time": "1:00 am",
+    "stadium": "Mercedes-Benz Stadium",
+    "city": "Atlanta, USA",
+    "group": "Final",
+    "stage": "Semi-final",
+    "score": null,
+    "isLive": false,
+    "minute": null
+  },
+  {
+    "id": 103,
+    "homeTeam": {
+      "name": "Loser match 101",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "awayTeam": {
+      "name": "Loser match 102",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "date": "July 19, 2026",
+    "time": "3:00 am",
+    "stadium": "Hard Rock Stadium",
+    "city": "Miami, USA",
+    "group": "Final",
+    "stage": "Bronze Final",
+    "score": null,
+    "isLive": false,
+    "minute": null
+  },
+  {
+    "id": 104,
+    "homeTeam": {
+      "name": "Winner match 101",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "awayTeam": {
+      "name": "Winner match 102",
+      "code": "TBD",
+      "flag": "🏳️"
+    },
+    "date": "July 20, 2026",
+    "time": "1:00 am",
+    "stadium": "MetLife Stadium",
+    "city": "East Rutherford, USA",
+    "group": "Final",
+    "stage": "Final",
+    "score": null,
+    "isLive": false,
+    "minute": null
   }
 ];
 
